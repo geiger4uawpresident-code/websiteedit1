@@ -36,7 +36,7 @@ export function PlatformSection() {
         "Strict 'No-Gift' policy for all elected officials with immediate removal for violations and a ban on corporate-funded travel.",
         "Direct election of all international representatives to ensure they answer to the members they service, not the people who appoint them."
       ],
-      memberMessage: "Members voted for reform because they wanted their union back. We will deliver that transparency on day one."
+      memberMessage: "Members voted for reform. The Monitor found an ongoing culture of fear and no budget. We owe it to every member to deliver something different — not someday, but on day one."
     },
     {
       id: "02",
