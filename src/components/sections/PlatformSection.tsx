@@ -18,7 +18,7 @@ interface Pillar {
   id: string;
   title: string;
   icon: LucideIcon;
-  problem: string[]; // Updated to support multi-paragraph narratives
+  problem: string[];
   commitments: string[];
   memberMessage: string;
 }
@@ -237,11 +237,11 @@ export function PlatformSection() {
                     <div className="lg:w-1/3 bg-campaign-black text-white p-8 md:p-10 lg:p-12 flex flex-col justify-between relative overflow-hidden shrink-0">
                       <div className="relative z-10">
                         <div className="flex items-center justify-between mb-8 lg:mb-12">
-                          <span className="text-campaign-gold/20 font-black text-6xl md:text-8xl leading-none tracking-tighter">
+                          <span className="text-campaign-gold/20 font-black text-6xl md:text-8xl leading-none tracking-tighter" aria-hidden="true">
                             {p.id}
                           </span>
                           <div className="bg-campaign-gold/20 p-4 rounded-2xl text-campaign-gold backdrop-blur-sm shadow-inner">
-                            <Icon className="w-8 h-8 md:w-12 md:h-12" />
+                            <Icon className="w-8 h-8 md:w-12 md:h-12" aria-label={`${p.title} icon`} />
                           </div>
                         </div>
                         <CardTitle className="text-2xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight leading-[1.2] mb-6 drop-shadow-sm">
@@ -256,7 +256,7 @@ export function PlatformSection() {
                           "{p.memberMessage}"
                         </p>
                       </div>
-                      <Icon className="absolute -bottom-12 -right-12 w-64 h-64 text-white/5 rotate-[15deg] pointer-events-none" />
+                      <Icon className="absolute -bottom-12 -right-12 w-64 h-64 text-white/5 rotate-[15deg] pointer-events-none" aria-hidden="true" />
                     </div>
                     <CardContent className="lg:w-2/3 p-8 md:p-12 lg:p-16 space-y-12 md:space-y-16 flex flex-col justify-center bg-white">
                       <div className="space-y-6">
@@ -304,9 +304,9 @@ export function PlatformSection() {
           viewport={{ once: true }}
           className="mt-16 md:mt-24 text-center p-8 md:p-16 lg:p-24 bg-campaign-black rounded-[3rem] text-white shadow-[0_35px_60px_-15px_rgba(0,0,0,0.6)] border-b-[12px] border-campaign-gold relative overflow-hidden"
         >
-          <Quote className="absolute top-12 left-12 text-campaign-gold/5 w-32 h-32 md:w-48 md:h-48 rotate-12" />
+          <Quote className="absolute top-12 left-12 text-campaign-gold/5 w-32 h-32 md:w-48 md:h-48 rotate-12" aria-hidden="true" />
           <div className="relative z-10 flex flex-col items-center">
-            <Quote className="text-campaign-gold mb-8 lg:mb-12" size={56} />
+            <Quote className="text-campaign-gold mb-8 lg:mb-12" size={56} aria-hidden="true" />
             <h3 className="text-2xl md:text-4xl lg:text-5xl font-black italic mb-8 lg:mb-12 max-w-5xl mx-auto leading-[1.15] tracking-tight text-balance">
               "We are not just electing a president. We are deciding who we are as a movement!"
             </h3>

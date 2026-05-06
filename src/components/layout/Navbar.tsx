@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -21,13 +21,13 @@ export function Navbar() {
       document.body.style.overflow = 'unset';
     }
   }, [isMobileMenuOpen]);
-  const navLinks = [
+  const navLinks = useMemo(() => [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Platform', href: '#platform' },
     { name: 'Join Us', href: '#involve' },
     { name: 'Resources', href: '#resources' },
-  ];
+  ], []);
   const DONATE_URL = "https://secure.anedot.com/2026-tricia-geiger-for-uaw-president/donate";
   const isNavActive = isScrolled || isMobileMenuOpen;
   return (
@@ -105,14 +105,14 @@ export function Navbar() {
                   "text-3xl sm:text-4xl font-black text-campaign-black py-5 border-b border-gray-50 last:border-0 active:text-campaign-gold transition-all uppercase tracking-tight transform",
                   isMobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-8 opacity-0"
                 )}
-                style={{ transitionDelay: `${idx * 50 + 100}ms` }}
+                style={{ transitionDelay: `${idx * 40 + 150}ms` }}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
               </a>
             ))}
           </div>
-          <div className="mt-auto pt-12 space-y-8">
+          <div className="mt-auto pt-12 space-y-8 flex flex-col items-center">
             <Button asChild size="lg" className="bg-campaign-gold hover:opacity-95 text-white font-black w-full h-16 text-xl shadow-xl active:scale-[0.98] transition-all rounded-2xl">
               <a href={DONATE_URL} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>
                 Donate Now
@@ -129,8 +129,8 @@ export function Navbar() {
       </div>
       {/* Visual Blur Backdrop for mobile menu open state */}
       {isMobileMenuOpen && (
-        <div 
-          className="fixed inset-0 z-[50] bg-black/40 backdrop-blur-sm md:hidden"
+        <div
+          className="fixed inset-0 z-[50] bg-black/40 backdrop-blur-sm md:hidden transition-opacity duration-300"
           onClick={() => setIsMobileMenuOpen(false)}
         />
       )}
