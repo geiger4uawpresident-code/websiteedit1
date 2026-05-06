@@ -71,7 +71,7 @@ export function PlatformSection() {
       id: "04",
       title: "Reimagining National Political Action & CAP",
       icon: Landmark,
-      problem: "Walter Reuther once said the 'bread box' is tied to the 'ballot box.' But labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on fundamental worker protections. We have been too quick to endorse and too slow to hold elected officials accountable. We must return to a model where we use our political weight to move the needle for all workers, not just to gain access to the halls of power.",
+      problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on fundamental worker protections. We have been too quick to endorse and too slow to hold elected officials accountable. We must return to a model where we use our political weight to move the needle for all workers, not just to gain access to the halls of power.",
       commitments: [
         "Tie all V-CAP endorsements strictly to a 'Labor-First' scorecard focused on anti-tier, anti-scab, and card-check legislation.",
         "Grant local councils Veto Power over regional endorsements that conflict with local member priorities or candidate records.",
@@ -105,7 +105,6 @@ export function PlatformSection() {
         "Redirection of saved administrative funds directly to 'Ground-War' organizing and local servicing budgets.",
         "Quarterly 'Dues Transparency Reports' mailed to every member's home, detailing exactly how every dollar is spent.",
         "Establish an independent Election Commission to oversee all international and regional votes with no ties to the IEB.",
-        "Ban on all 'Administrative Caucus' assessments or forced contributions from appointed staff.",
         "Restructure the Strike Fund to ensure benefit payments match 100% of a member's base take-home pay from day one."
       ],
       memberMessage: "Leadership that wins the trust of the members shouldn't be afraid to defend its record without using the members' money."
@@ -120,9 +119,7 @@ export function PlatformSection() {
         "Create a permanent, voting seat on the International Executive Board (IEB) for a Retiree Council Representative.",
         "Launch a National Retiree Mentorship program to connect veteran experience with new-hire organizing and steward training.",
         "Protect and expand surviving spouse benefits to ensure no UAW family is left in poverty after a lifetime of service.",
-        "Establish 'Retiree Resource Hubs' in every region to assist with healthcare navigation and benefit claims.",
-        "Constitutional protection of retiree chapters to ensure they have the budget and autonomy to organize locally.",
-        "Annual 'State of the Retiree' reports presented to the International Convention."
+        "Constitutional protection of retiree chapters to ensure they have the budget and autonomy to organize locally."
       ],
       memberMessage: "Retirees are not the past of this union; they are the conscience and the backbone. We will fight for those who fought for us."
     },
@@ -130,13 +127,12 @@ export function PlatformSection() {
       id: "08",
       title: "Organizing: Growing Our Power",
       icon: Network,
-      problem: "Falling union density is the single greatest threat to our collective bargaining power. Every non-union plant is a weapon the boss uses against us at the bargaining table. If we don't organize the new industries—especially the EV and battery sectors in the South—we will lose the leverage required to protect our existing standards. We cannot wait for the workers to come to us; we must take the fight to the gates.",
+      problem: "Falling union density is the single greatest threat to our collective bargaining power. Every non-union plant is a weapon the boss uses against us at the bargaining table. If we don't organize the new industries—especially the EV and battery sectors in the South—we will lose the leverage required to protect our existing standards.",
       commitments: [
         "Authorize a $100 Million Strategic Organizing Fund specifically targeted at the non-union South and the burgeoning EV sector.",
-        "Deploy 'Tiger Teams'—elite, rapid-response organizing units of rank-and-file members—for new plant drives and community outreach.",
-        "Implement a 'Sector-Wide Solidarity' model to organize the entire supply chain, ensuring no link is left vulnerable to corporate pressure.",
-        "Leverage digital-first organizing tools and data analytics to reach workers in tech-manufacturing and new industrial hubs.",
-        "Establish 'Worker Centers' in non-union corridors to build community support and provide resources before a drive even begins.",
+        "Deploy 'Tiger Teams'—elite, rapid-response organizing units of rank-and-file members—for new plant drives.",
+        "Implement a 'Sector-Wide Solidarity' model to organize the entire supply chain.",
+        "Leverage digital-first organizing tools and data analytics to reach workers in tech-manufacturing.",
         "Commitment to 'Card Check' neutrality agreements in all future master contracts with multi-national employers."
       ],
       memberMessage: "Every worker we leave behind is a worker the boss will use against us. We will organize until we win."
@@ -175,7 +171,6 @@ export function PlatformSection() {
             </p>
           </motion.div>
         </div>
-        {/* Brand Pillars Summary */}
         <div className="grid md:grid-cols-3 gap-8 mb-24 items-stretch">
           {brandPillars.map((bp, i) => (
             <motion.div
@@ -196,7 +191,6 @@ export function PlatformSection() {
             </motion.div>
           ))}
         </div>
-        {/* Detailed Strategic Pillars */}
         <div className="space-y-16 lg:space-y-24">
           {pillars.map((p) => {
             const Icon = p.icon;
@@ -210,7 +204,6 @@ export function PlatformSection() {
               >
                 <Card className="border-none shadow-2xl overflow-hidden bg-white hover:shadow-campaign-gold/10 transition-shadow duration-500">
                   <div className="flex flex-col lg:flex-row min-h-[500px]">
-                    {/* Sidebar / Header of the Pillar */}
                     <div className="lg:w-1/3 bg-campaign-black text-white px-8 py-12 md:p-12 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center justify-between mb-10">
@@ -224,14 +217,12 @@ export function PlatformSection() {
                         </CardTitle>
                       </div>
                       <div className="pt-8 border-t border-white/10">
-                        {/* Refined label strictly aligning with client's Member-Facing Message directive */}
                         <p className="text-campaign-gold font-black uppercase tracking-widest text-[10px] mb-4">Member-Facing Message</p>
                         <p className="text-lg md:text-xl italic font-medium leading-relaxed text-white/90">
                           "{p.memberMessage}"
                         </p>
                       </div>
                     </div>
-                    {/* Main Content Area */}
                     <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-12 flex flex-col justify-center">
                       <div className="space-y-4">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</h4>
@@ -261,7 +252,6 @@ export function PlatformSection() {
             );
           })}
         </div>
-        {/* Closing Narrative Callout */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
