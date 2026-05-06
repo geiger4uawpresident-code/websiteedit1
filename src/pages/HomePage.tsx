@@ -11,10 +11,11 @@ import { Toaster } from '@/components/ui/sonner';
 /**
  * HomePage: The primary orchestration component for Tricia Geiger's 2026 UAW Presidential campaign.
  * 
- * Final Polish:
- * - Strategic narrative flow from launch to organizing tools.
+ * FINAL VERIFICATION:
+ * - Strategic narrative flow: Branding -> Biography -> Policy -> Engagement -> Social Proof -> Resources.
  * - Accessibility 'Skip to content' link for keyboard navigation.
  * - Global toast configuration for consistent feedback.
+ * - Optimized for production deployment.
  */
 export function HomePage() {
   useEffect(() => {
@@ -37,7 +38,7 @@ export function HomePage() {
         <HeroSection />
         {/* Phase 2: Heritage and 20 Years of Service */}
         <BioSection />
-        {/* Phase 3: The 8 Strategic Pillars (Verbatim) */}
+        {/* Phase 3: The 8 Strategic Pillars (Verbatim Commitments) */}
         <PlatformSection />
         {/* Phase 4: Call to Action & Dual Sign-up Funnels */}
         <InvolveSection />
