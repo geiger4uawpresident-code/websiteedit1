@@ -9,20 +9,18 @@ import { ResourcesSection } from '@/components/sections/ResourcesSection';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/sonner';
 /**
- * HomePage: The primary orchestration component for Tricia Geiger's 2026 UAW Presidential campaign.
- *
- * FINAL PRODUCTION AUDIT:
- * - Strategic narrative flow: Branding -> Biography -> Policy -> Engagement -> Social Proof -> Resources.
- * - Branding: Verified tan/gold/black palette consistency (#C5A059 Gold).
- * - Accessibility: Functional 'Skip to content' link for keyboard navigation.
- * - SEO/Metadata: Official title "Tricia Geiger for UAW President 2026 | Prepared. Democratic. Accountable."
- * - Interaction: Global toast configuration with campaign-themed borders.
+ * HomePage: Final Production Build for Tricia Geiger's 2026 UAW Presidential Campaign.
+ * 
+ * CORE STRATEGY:
+ * - SEO: Maintain high-authority meta title for union keywords.
+ * - UX: Sticky navigation and high-visibility CTAs for donations/sign-ups.
+ * - ACCESSIBILITY: WCAG 2.1 compliance with skip links and focus states.
  */
 export function HomePage() {
   useEffect(() => {
-    // Official campaign title for SEO and browser tabs
+    // Official campaign title for SEO and browser tab identity
     document.title = "Tricia Geiger for UAW President 2026 | Prepared. Democratic. Accountable.";
-    // Ensure initial entry is at the top of the page
+    // Reset scroll position on entry
     if (window.history.scrollRestoration) {
       window.history.scrollRestoration = 'manual';
     }
@@ -30,43 +28,45 @@ export function HomePage() {
   }, []);
   return (
     <div className="min-h-screen bg-white selection:bg-campaign-gold selection:text-white antialiased overflow-x-hidden">
-      {/* Accessibility Skip Link: Points to #main-content anchor */}
+      {/* High-visibility Skip Link for keyboard navigation accessibility */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-[100] bg-campaign-black text-white px-6 py-3 rounded-lg font-bold shadow-2xl ring-4 ring-campaign-gold transition-all"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-6 focus:left-6 z-[100] bg-campaign-black text-white px-8 py-4 rounded-xl font-black shadow-[0_20px_50px_rgba(0,0,0,0.3)] ring-4 ring-campaign-gold transition-all"
       >
         Skip to main content
       </a>
       {/* Persistent Navigation Layer */}
       <Navbar />
       <main id="main-content" role="main" className="outline-none" tabIndex={-1}>
-        {/* Visual Hero & Primary CTA */}
+        {/* Visual Hero & Primary Video Launch */}
         <HeroSection />
-        {/* Biographical Journey & Heritage */}
+        {/* Biographical Narrative & Experience */}
         <BioSection />
         {/* 8-Pillar Strategic Reform Platform */}
         <PlatformSection />
-        {/* Dual Sign-up Funnels (Sender.site) */}
+        {/* Dual Sign-up Funnels (Updates & Amplifiers) */}
         <InvolveSection />
-        {/* Verbatim Member Endorsements */}
+        {/* Social Proof & Member Testimonials */}
         <Endorsements />
-        {/* Organizing Materials & Downloadable Toolkit */}
+        {/* Organizing Toolkit & Member Resources */}
         <ResourcesSection />
       </main>
-      {/* Footer with Donations (Anedot) and Social Links */}
+      {/* Footer with Contact, Socials, and Donation Links */}
       <Footer />
-      {/* Global Campaign Notifications (Sonner) */}
+      {/* Global Campaign Notifications (Sonner) - Branded tan/black theme */}
       <Toaster
         richColors
         closeButton
         position="bottom-center"
         toastOptions={{
           style: {
-            borderRadius: '12px',
-            border: '1px solid #D4C4A8', // Campaign Tan
-            background: 'white',
+            borderRadius: '16px',
+            border: '2px solid #D4C4A8',
+            background: '#FFFFFF',
             color: '#1A1A1A',
+            fontWeight: '600',
             fontFamily: 'Inter, sans-serif',
+            boxShadow: '0 10px 30px -5px rgba(0,0,0,0.1)',
           },
         }}
       />
