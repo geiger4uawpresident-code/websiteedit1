@@ -71,12 +71,12 @@ export function PlatformSection() {
       id: "04",
       title: "Reimagining National Political Action & CAP",
       icon: Landmark,
-      problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on fundamental worker protections. We have been too quick to endorse and too slow to hold elected officials accountable. We must return to a model where we use our political weight to move the needle for all workers, not just to gain access to the halls of power.",
+      problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on fundamental member protections. We have been too quick to endorse and too slow to hold elected officials accountable. We must return to a model where we use our political weight to move the needle for all members, not just to gain access to the halls of power.",
       commitments: [
         "Tie all V-CAP endorsements strictly to a 'Labor-First' scorecard focused on anti-tier, anti-scab, and card-check legislation.",
         "Grant local councils Veto Power over regional endorsements that conflict with local member priorities or candidate records.",
         "Aggressive, member-led lobbying for the 'Worker Freedom Act' to end forced captive audience meetings and 'right-to-work' laws.",
-        "Establish a 'UAW Political Fellowships' program to train rank-and-fold members to run for local and state offices.",
+        "Establish a 'UAW Political Fellowships' program to train rank-and-file members to run for local and state offices.",
         "Direct member-led development of the biennial UAW National Legislative Agenda through regional summits."
       ],
       memberMessage: "It's time we stop being a junior partner to political parties and start being a lead negotiator at the bargaining table."
@@ -130,12 +130,12 @@ export function PlatformSection() {
       problem: "Falling union density is the single greatest threat to our collective bargaining power. Every non-union plant is a weapon the boss uses against us at the bargaining table. If we don't organize the new industries—especially the EV and battery sectors in the South—we will lose the leverage required to protect our existing standards.",
       commitments: [
         "Authorize a $100 Million Strategic Organizing Fund specifically targeted at the non-union South and the burgeoning EV sector.",
-        "Deploy 'Tiger Teams'—elite, rapid-response organizing units of rank-and-fold members—for new plant drives.",
+        "Deploy 'Tiger Teams'—elite, rapid-response organizing units of rank-and-file members—for new plant drives.",
         "Implement a 'Sector-Wide Solidarity' model to organize the entire supply chain.",
         "Leverage digital-first organizing tools and data analytics to reach workers in tech-manufacturing.",
         "Commitment to 'Card Check' neutrality agreements in all future master contracts with multi-national employers."
       ],
-      memberMessage: "Every worker we leave behind is a worker the boss will use against us. We will organize until we win."
+      memberMessage: "Every member we leave behind is a member the boss will use against us. We will organize until we win."
     }
   ], []);
   const brandPillars = useMemo(() => [
