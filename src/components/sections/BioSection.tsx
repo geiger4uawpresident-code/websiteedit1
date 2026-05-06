@@ -16,7 +16,7 @@ export function BioSection() {
             <h2 className="text-3xl md:text-5xl font-display font-black text-campaign-black uppercase">The Journey of Service</h2>
             <div className="h-1.5 w-24 bg-gradient-to-r from-campaign-gold to-campaign-tan" />
           </motion.div>
-          {/* Narrative Section - Updated to avoid prose plugin dependency */}
+          {/* Narrative Section */}
           <div className="max-w-none text-muted-foreground space-y-6 text-center md:text-left">
             <p className="text-lg md:text-xl leading-relaxed">
               Tricia Geiger is a veteran UAW member and organizer who has spent the last 20 years fighting for the dignity of labor. Tricia got her start at <strong className="text-campaign-black font-bold">GM Local 651 in Flint, Michigan</strong>. Her roots in the union aren't just professional—they're part of a multi-generational legacy. Her grandfather was a migrant farmworker who found stability and a middle-class life as a member of <strong className="text-campaign-black font-bold">GM Fisher Body Local 598</strong>.
@@ -33,7 +33,7 @@ export function BioSection() {
               </div>
               <div>
                 <h4 className="font-bold text-campaign-black text-lg">20 Years of Service</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">Proven, member-first shop floor experience across multiple UAW sectors.</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">Proven, member-first leadership approach across multiple UAW sectors.</p>
               </div>
             </div>
             <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4 p-6 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-white hover:border-campaign-gold/30 hover:shadow-lg hover:shadow-campaign-gold/5 transition-all duration-300 group cursor-default">

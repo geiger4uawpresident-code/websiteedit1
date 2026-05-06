@@ -31,7 +31,7 @@ export function ResourcesSection() {
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl md:text-5xl font-display font-black text-campaign-black uppercase">Campaign Resources</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Download and share official materials to help organize your local and spread the message of accountability.
+            Download and share materials to advance the shared mission of our members to rebuild our union
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

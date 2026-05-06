@@ -71,11 +71,11 @@ export function HeroSection() {
           variants={itemVariants}
           className="flex flex-col items-center gap-4"
         >
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <Button asChild size="lg" className="bg-campaign-gold hover:opacity-95 text-white font-bold h-14 px-10 transition-all active:scale-95 shadow-xl shadow-campaign-gold/20 backdrop-blur-sm">
+          <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto items-center justify-center">
+            <Button asChild size="lg" className="bg-campaign-gold hover:opacity-95 text-white font-bold h-14 px-10 sm:w-64 transition-all active:scale-95 shadow-xl shadow-campaign-gold/20 backdrop-blur-sm">
               <a href="#involve">Sign Me Up</a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-white/10 hover:border-campaign-gold hover:text-white h-14 px-10 transition-all active:scale-95 backdrop-blur-sm">
+            <Button asChild variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-white/10 hover:border-campaign-gold hover:text-white h-14 px-10 sm:w-64 transition-all active:scale-95 backdrop-blur-sm">
               <a href="#platform">Read the Platform</a>
             </Button>
           </div>
