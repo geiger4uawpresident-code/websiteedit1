@@ -42,14 +42,14 @@ export function PlatformSection() {
       id: "02",
       title: "Bargaining: Preparing for the Fights Ahead",
       icon: Handshake,
-      problem: "The issues our members are facing at the bargaining table are more complex than ever before. For years, corporations have refined their ability to use intricate contracts to hide concessions, while members were often the last to know the details of the deals that define their lives. We are entering a bargaining climate where automation, the 'green transition,' and global competition are being used as threats to our job security and standards. We need a strategy that uses our full economic power and puts the corporation on the defensive. We will no longer accept contracts that trade the future of our new members for the comfort of the current leadership. We have a plan and the will to execute it.",
+      problem: "The issues our members are facing at the bargaining table are more complex than ever before. For years, corporations have refined their ability to use intricate contracts to hide concessions, while members were often the last to know the details of the deals that define their lives. We are entering a bargaining climate where automation, the 'green transition,' and global competition are being used as threats to our job security and standards. We need a strategy that uses our full economic power and puts the corporation on the defensive.",
       commitments: [
-        "Adopt 'Open Bargaining' protocols: Daily digital updates and summarized transcripts of negotiations provided to the membership.",
+        "Honor member-driven bargaining agendas by ensuring local unit priorities dictate the table strategy.",
         "Establish an Economic War Room staffed by labor economists and industry experts to counter corporate misinformation.",
-        "A binding constitutional commitment to eliminate ALL tiered wage and benefit systems in the first contract negotiated under this administration.",
+        "A binding constitutional commitment to eliminate ALL tiered wage and benefit systems in the first contract negotiated.",
         "Full contract language must be released to the membership in a searchable digital format 7 days before any ratification vote.",
         "Standardized 'Solidarity Clauses' in all sector contracts to allow for common expiration dates and coordinated industrial action.",
-        "Mandatory strike-readiness training for every local 12 months prior to contract expiration."
+        "Implement 'Bargaining Surveillance' protocols to track corporate automation and AI substance in real-time."
       ],
       memberMessage: "The fights ahead are real. So is our commitment to fighting them on your terms — with your voice, your priorities, and your power leading the way."
     },
@@ -99,7 +99,7 @@ export function PlatformSection() {
       id: "06",
       title: "Internal Campaign Finance Reform & Union Integrity",
       icon: PieChart,
-      problem: "The move to Direct Elections was a victory for the members, but the 'incumbency advantage' remains a barrier to true democracy. When dues dollars are used to fund the public relations of sitting officers during election cycles, it creates an unlevel playing field. We need strict rules that separate the work of the union from the work of campaigning, ensuring that every member has a fair shot at leading.",
+      problem: "The move to Direct Elections was a victory for the members, but the 'incumbency advantage' remains a barrier to true democracy. When dues dollars are used to fund the public relations of sitting officers during election cycles, it creates an unlevel playing field. We need strict rules that separate the work of the union from the work of campaigning.",
       commitments: [
         "Strict separation of union communication assets from campaign activities during election periods.",
         "Commitment to a 30% reduction in non-essential administrative overhead at Solidarity House within 24 months.",
@@ -114,7 +114,7 @@ export function PlatformSection() {
       id: "07",
       title: "Retiree Dignity & Continued Voice",
       icon: HistoryIcon,
-      problem: "The giants whose shoulders we stand on are being sidelined. Solidarity is a lifelong bond, yet our retirees often feel disconnected from active leadership and vulnerable to pension erosion. As inflation rises, the fixed incomes of our veterans are being squeezed. We must honor the promises made to those who built this union and ensure they remain an active, voting part of our future strength.",
+      problem: "The giants whose shoulders we stand on are being sidelined. Solidarity is a lifelong bond, yet our retirees often feel disconnected from active leadership and vulnerable to pension erosion. As inflation rises, the fixed incomes of our veterans are being squeezed. We must honor the promises made to those who built this union.",
       commitments: [
         "Negotiate Automatic COLA (Cost of Living Adjustments) for all retiree pensions in every future contract negotiation.",
         "Create a permanent, voting seat on the International Executive Board (IEB) for a Retiree Council Representative.",

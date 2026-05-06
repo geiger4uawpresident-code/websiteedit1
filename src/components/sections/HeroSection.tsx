@@ -44,10 +44,10 @@ export function HeroSection() {
             animate={{ scale: 1, rotate: 0 }}
             transition={{ type: "spring", stiffness: 260, damping: 20 }}
           >
-            <CampaignLogo 
-              variant="black-on-gold" 
-              size="lg" 
-              className="shadow-[0_0_50px_rgba(197,160,89,0.4)] scale-110 md:scale-125" 
+            <CampaignLogo
+              variant="black-on-gold"
+              size="lg"
+              className="shadow-[0_0_50px_rgba(197,160,89,0.4)] scale-110 md:scale-125"
             />
           </motion.div>
           <span className="inline-block px-6 py-2 rounded-full bg-campaign-gold text-white text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] shadow-lg shadow-campaign-gold/20">
