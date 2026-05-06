@@ -29,7 +29,7 @@ export function InvolveSection() {
             This movement belongs to the members. Join Tricia in building a <span className="text-campaign-black font-bold">Prepared, Democratic, and Accountable</span> UAW. Choose how you want to participate in rebuilding our union and ensuring every voice is heard.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 items-stretch">
           {cards.map((card, idx) => {
             const Icon = card.icon;
             return (
@@ -37,16 +37,17 @@ export function InvolveSection() {
                 key={idx}
                 whileHover={{ y: -5 }}
                 transition={{ duration: 0.2 }}
+                className="h-full flex"
               >
-                <Card className="h-full border-2 border-campaign-tan/20 hover:border-campaign-gold/40 transition-all shadow-lg overflow-hidden group">
-                  <CardHeader className="pb-4">
-                    <div className="mb-4 bg-campaign-tan/10 group-hover:bg-campaign-gold/10 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all">
+                <Card className="flex flex-col w-full border-2 border-campaign-tan/20 hover:border-campaign-gold/40 transition-all shadow-lg overflow-hidden group">
+                  <CardHeader className="flex-1 pb-4">
+                    <div className="mb-4 bg-campaign-tan/10 group-hover:bg-campaign-gold/10 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all shrink-0">
                       <Icon className="w-8 h-8 text-campaign-gold group-hover:text-campaign-black transition-colors" />
                     </div>
                     <CardTitle className="text-2xl font-bold text-campaign-black">{card.title}</CardTitle>
                     <CardDescription className="text-base leading-relaxed">{card.description}</CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="mt-auto pt-0">
                     <Button asChild className="w-full bg-campaign-black hover:bg-campaign-gold text-white font-bold h-12 group transition-all shadow-md hover:shadow-campaign-gold/10">
                       <a href={card.link} target="_blank" rel="noopener noreferrer">
                         {card.cta} <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

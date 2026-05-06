@@ -21,6 +21,7 @@ export function Navbar() {
       document.body.style.overflow = 'unset';
     }
   }, [isMobileMenuOpen]);
+  // Primary navigation configuration verified per client directive
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
