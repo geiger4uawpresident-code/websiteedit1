@@ -53,9 +53,11 @@ export function HeroSection() {
           <span className="inline-block px-6 py-2 rounded-full bg-campaign-gold text-white text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] shadow-lg shadow-campaign-gold/20">
             Prepared. Democratic. Accountable.
           </span>
-          <h1 className="text-[2.25rem] leading-[1.1] sm:text-6xl md:text-7xl lg:text-8xl font-display font-black text-white uppercase tracking-tight text-balance">
+          <h1 className="text-[2.25rem] sm:text-6xl md:text-7xl lg:text-8xl font-display font-black text-white uppercase tracking-tight text-balance leading-[1.1]">
             Tricia Geiger <br />
-            <span className="text-campaign-gold italic text-[1.75rem] sm:text-inherit">for UAW President</span>
+            <span className="text-campaign-gold italic text-[1.75rem] sm:text-inherit block sm:inline mt-1 sm:mt-0">
+              for UAW President
+            </span>
           </h1>
           <p className="text-base sm:text-lg md:text-2xl text-campaign-tan max-w-3xl mx-auto font-medium drop-shadow-sm leading-relaxed px-4 opacity-95 tracking-tight text-balance">
             One Union. One Movement. Building a transparent and <span className="relative inline-block border-b-[3px] sm:border-b-[5px] border-campaign-red/80 pb-0.5 sm:pb-1 text-white font-bold mx-1">accountable</span> future for every member.
