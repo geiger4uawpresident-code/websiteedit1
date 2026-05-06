@@ -73,7 +73,7 @@ export function HeroSection() {
         >
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <Button asChild size="lg" className="bg-campaign-gold hover:opacity-95 text-white font-bold h-14 px-10 transition-all active:scale-95 shadow-xl shadow-campaign-gold/20 backdrop-blur-sm">
-              <a href="#involve">Join the Movement</a>
+              <a href="#involve">Sign Me Up</a>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-white/10 hover:border-campaign-gold hover:text-white h-14 px-10 transition-all active:scale-95 backdrop-blur-sm">
               <a href="#platform">Read the Platform</a>
