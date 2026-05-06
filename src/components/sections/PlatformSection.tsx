@@ -130,7 +130,7 @@ export function PlatformSection() {
       problem: "Falling union density is the single greatest threat to our collective bargaining power. Every non-union plant is a weapon the boss uses against us at the bargaining table. If we don't organize the new industries—especially the EV and battery sectors in the South—we will lose the leverage required to protect our existing standards.",
       commitments: [
         "Authorize a $100 Million Strategic Organizing Fund specifically targeted at the non-union South and the burgeoning EV sector.",
-        "Deploy 'Tiger Teams'—elite, rapid-response organizing units of rank-and-file members—for new plant drives.",
+        "Deploy 'Tiger Teams'—elite, rapid-response organizing units of rank-and-fold members—for new plant drives.",
         "Implement a 'Sector-Wide Solidarity' model to organize the entire supply chain.",
         "Leverage digital-first organizing tools and data analytics to reach workers in tech-manufacturing.",
         "Commitment to 'Card Check' neutrality agreements in all future master contracts with multi-national employers."
@@ -156,23 +156,25 @@ export function PlatformSection() {
     }
   ], []);
   return (
-    <section id="platform" className="py-24 bg-campaign-tan/5 scroll-mt-20">
+    <section id="platform" className="py-16 md:py-24 bg-campaign-tan/5 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20 space-y-4">
+        <div className="text-center mb-16 md:mb-20 space-y-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-6xl font-display font-black text-campaign-black uppercase tracking-tight leading-none">The 2026 Strategic Platform</h2>
-            <p className="text-muted-foreground text-xl max-w-3xl mx-auto mt-6">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-display font-black text-campaign-black uppercase tracking-tight leading-tight">
+              The 2026 Strategic Platform
+            </h2>
+            <p className="text-muted-foreground text-base sm:text-lg md:text-xl max-w-3xl mx-auto mt-4 md:mt-6">
               A Member-First blueprint to restore power, transparency, and results to the membership.
             </p>
           </motion.div>
         </div>
         {/* Brand Values Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-24 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16 md:mb-24 items-stretch">
           {brandPillars.map((bp, i) => (
             <motion.div
               key={bp.title}
@@ -180,20 +182,20 @@ export function PlatformSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5 flex flex-col h-full hover:shadow-2xl hover:shadow-campaign-gold/10 transition-all group"
+              className="bg-white p-6 md:p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5 flex flex-col h-full hover:shadow-2xl hover:shadow-campaign-gold/10 transition-all group"
             >
-              <h3 className="text-2xl font-black text-campaign-black mb-4 uppercase tracking-tighter shrink-0">{bp.title}</h3>
-              <p className="text-muted-foreground mb-8 leading-relaxed flex-grow text-sm md:text-base">
+              <h3 className="text-xl md:text-2xl font-black text-campaign-black mb-4 uppercase tracking-tighter shrink-0">{bp.title}</h3>
+              <p className="text-muted-foreground mb-6 md:mb-8 leading-relaxed flex-grow text-sm md:text-base">
                 {bp.desc}
               </p>
               <div className="pt-6 border-t border-gray-100 mt-auto shrink-0">
-                <p className="text-campaign-gold font-black italic text-lg group-hover:scale-105 transition-transform duration-300">"{bp.quote}"</p>
+                <p className="text-campaign-gold font-black italic text-base md:text-lg group-hover:scale-105 transition-transform duration-300">"{bp.quote}"</p>
               </div>
             </motion.div>
           ))}
         </div>
         {/* Detailed Strategic Pillars */}
-        <div className="space-y-16 lg:space-y-24">
+        <div className="space-y-12 md:space-y-16 lg:space-y-24">
           {pillars.map((p) => {
             const Icon = p.icon;
             return (
@@ -204,14 +206,16 @@ export function PlatformSection() {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true, margin: "-100px" }}
               >
-                <Card className="border-none shadow-2xl overflow-hidden bg-white hover:shadow-campaign-gold/10 transition-shadow duration-500">
-                  <div className="flex flex-col lg:flex-row min-h-[500px]">
+                <Card className="border-none shadow-2xl overflow-hidden bg-white hover:shadow-campaign-gold/10 transition-all duration-500 rounded-3xl">
+                  <div className="flex flex-col lg:flex-row min-h-[450px]">
                     {/* Sidebar Pillar Info */}
-                    <div className="lg:w-1/3 bg-campaign-black text-white px-5 py-10 md:p-12 flex flex-col justify-between">
-                      <div>
-                        <div className="flex items-center justify-between mb-10">
-                          <span className="text-campaign-gold/20 font-black text-6xl md:text-8xl">{p.id}</span>
-                          <div className="bg-campaign-gold/20 p-4 rounded-2xl text-campaign-gold">
+                    <div className="lg:w-1/3 bg-campaign-black text-white p-8 md:p-10 lg:p-12 flex flex-col justify-between relative overflow-hidden">
+                      <div className="relative z-10">
+                        <div className="flex items-center justify-between mb-8 lg:mb-10">
+                          <span className="text-campaign-gold/20 font-black text-5xl md:text-7xl lg:text-8xl leading-none">
+                            {p.id}
+                          </span>
+                          <div className="bg-campaign-gold/20 p-4 rounded-2xl text-campaign-gold backdrop-blur-sm">
                             <Icon className="w-8 h-8 md:w-10 md:h-10" />
                           </div>
                         </div>
@@ -219,31 +223,38 @@ export function PlatformSection() {
                           {p.title}
                         </CardTitle>
                       </div>
-                      <div className="pt-8 border-t border-white/10">
-                        <p className="text-lg md:text-xl italic font-medium leading-relaxed text-white/90">
+                      <div className="pt-6 md:pt-8 border-t border-white/10 relative z-10">
+                        <p className="text-base md:text-lg lg:text-xl italic font-medium leading-relaxed text-white/90">
                           "{p.memberMessage}"
                         </p>
                       </div>
+                      {/* Decorative Background Icon */}
+                      <Icon className="absolute -bottom-10 -right-10 w-48 h-48 text-white/5 rotate-12 pointer-events-none" />
                     </div>
                     {/* Content Details */}
-                    <CardContent className="lg:w-2/3 px-5 py-10 md:p-12 space-y-10 md:space-y-12 flex flex-col justify-center">
+                    <CardContent className="lg:w-2/3 p-8 md:p-10 lg:p-12 space-y-10 md:space-y-12 flex flex-col justify-center">
                       <div className="space-y-4">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</h4>
-                        <div className="border-l-4 border-campaign-gold bg-campaign-gold/5 p-5 sm:p-8 rounded-r-xl shadow-sm">
-                          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+                        <div className="border-l-4 border-campaign-gold bg-campaign-gold/5 p-5 md:p-8 rounded-r-xl shadow-sm transition-colors hover:bg-campaign-gold/[0.08]">
+                          <p className="text-gray-700 text-sm md:text-base lg:text-lg leading-relaxed">
                             {p.problem}
                           </p>
                         </div>
                       </div>
                       <div className="space-y-6">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</h4>
-                        <ul className="grid gap-4 md:gap-6">
+                        <ul className="grid gap-3 md:gap-5">
                           {p.commitments.map((commitment, index) => (
-                            <li key={`${p.id}-commitment-${index}`} className="flex gap-4 pb-4 text-sm md:text-lg leading-relaxed text-gray-800 items-start group border-b border-gray-50 last:border-0 last:pb-0 transition-colors">
-                              <div className="mt-1.5 bg-campaign-gold/10 p-1.5 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
-                                <ChevronRight size={18} strokeWidth={3} />
+                            <li 
+                              key={`${p.id}-commitment-${index}`} 
+                              className="flex gap-4 p-3 -mx-3 rounded-xl hover:bg-campaign-tan/10 transition-all duration-300 items-start group border-b border-gray-50 last:border-0 last:pb-0"
+                            >
+                              <div className="mt-1 bg-campaign-gold/10 p-1.5 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
+                                <ChevronRight size={16} md:size={18} strokeWidth={3} />
                               </div>
-                              <span className="font-medium group-hover:text-campaign-black">{commitment}</span>
+                              <span className="text-sm md:text-base lg:text-lg font-medium text-gray-800 leading-relaxed group-hover:text-campaign-black transition-colors">
+                                {commitment}
+                              </span>
                             </li>
                           ))}
                         </ul>
@@ -257,16 +268,21 @@ export function PlatformSection() {
         </div>
         {/* Closing Verbatim Quote */}
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-24 text-center p-12 bg-campaign-black rounded-3xl text-white shadow-2xl border-b-8 border-campaign-gold"
+          className="mt-16 md:mt-24 text-center p-8 md:p-16 bg-campaign-black rounded-[2.5rem] text-white shadow-2xl border-b-[10px] border-campaign-gold relative overflow-hidden"
         >
-          <Quote className="mx-auto text-campaign-gold mb-6" size={48} />
-          <h3 className="text-2xl md:text-4xl font-black italic mb-6 max-w-4xl mx-auto leading-tight">
-            "We are not just electing a president. We are deciding who we are as a movement!"
-          </h3>
-          <p className="text-campaign-gold font-black uppercase tracking-[0.3em] text-sm md:text-base">Tricia Geiger</p>
+          <Quote className="absolute top-8 left-8 text-campaign-gold/5 w-24 h-24 md:w-32 md:h-32 rotate-12" />
+          <div className="relative z-10">
+            <Quote className="mx-auto text-campaign-gold mb-6 md:mb-8" size={48} />
+            <h3 className="text-xl md:text-3xl lg:text-4xl font-black italic mb-6 md:mb-8 max-w-4xl mx-auto leading-tight md:leading-snug">
+              "We are not just electing a president. We are deciding who we are as a movement!"
+            </h3>
+            <p className="text-campaign-gold font-black uppercase tracking-[0.3em] text-sm md:text-lg">
+              Tricia Geiger
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>
