@@ -45,7 +45,7 @@ export function PlatformSection() {
       problem: "The 'Crisis of Tiers' was born from a lack of strategic preparation and transparency. Corporations have spent years refining their ability to use complex contracts to hide concessions, while members were often the last to know the details of the deals that define their lives. We are entering a bargaining climate where automation and 'green transition' are being used as threats. We need a strategy that uses our full economic power and puts the corporation on the defensive.",
       commitments: [
         "Adopt 'Open Bargaining' protocols: Daily digital updates and summarized transcripts of negotiations provided to the membership.",
-        "Establish a Pre-Strike 'Economic War Room' staffed by labor economists and industry experts to counter corporate misinformation.",
+        "Establish an Economic War Room staffed by labor economists and industry experts to counter corporate misinformation.",
         "A binding constitutional commitment to eliminate ALL tiered wage and benefit systems in the first contract negotiated under this administration.",
         "Full contract language must be released to the membership in a searchable digital format 7 days before any ratification vote.",
         "Standardized 'Solidarity Clauses' in all sector contracts to allow for common expiration dates and coordinated industrial action.",
@@ -228,7 +228,6 @@ export function PlatformSection() {
                           "{p.memberMessage}"
                         </p>
                       </div>
-                      {/* Decorative Background Icon */}
                       <Icon className="absolute -bottom-10 -right-10 w-48 h-48 text-white/5 rotate-12 pointer-events-none" />
                     </div>
                     {/* Content Details */}
@@ -245,12 +244,12 @@ export function PlatformSection() {
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</h4>
                         <ul className="grid gap-3 md:gap-5">
                           {p.commitments.map((commitment, index) => (
-                            <li 
-                              key={`${p.id}-commitment-${index}`} 
+                            <li
+                              key={`${p.id}-commitment-${index}`}
                               className="flex gap-4 p-3 -mx-3 rounded-xl hover:bg-campaign-tan/10 transition-all duration-300 items-start group border-b border-gray-50 last:border-0 last:pb-0"
                             >
                               <div className="mt-1 bg-campaign-gold/10 p-1.5 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
-                                <ChevronRight size={16} md:size={18} strokeWidth={3} />
+                                <ChevronRight strokeWidth={3} className="w-4 h-4 md:w-[18px] md:h-[18px]" />
                               </div>
                               <span className="text-sm md:text-base lg:text-lg font-medium text-gray-800 leading-relaxed group-hover:text-campaign-black transition-colors">
                                 {commitment}
