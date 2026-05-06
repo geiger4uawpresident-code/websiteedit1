@@ -59,10 +59,11 @@ export function PlatformSection() {
       icon: Users,
       problem: "Our representatives are often outmatched not by talent, but by the modern digital tools, legal resources, and data analytics deployed by multi-national corporations. A lack of standardized, high-level training for stewards and servicing reps leads to inconsistent enforcement of our hard-won rights. We cannot win tomorrow's grievances with yesterday's training. We must build a culture where preparation is the baseline for every leader.",
       commitments: [
-        "Launch the 'UAW Leadership Institute'—a mandatory, rigorous certification program for all servicing reps and local stewards.",
+        "Mandatory 'Member-Driven Bargaining Agenda' training for all international and local representatives to ensure member priorities lead every negotiation.",
+        "Standardized 'Strike Authorization Transparency' protocols for stewards to keep the rank-and-file informed during industrial actions.",
+        "Launch the 'UAW Leadership Institute'—a rigorous certification program for all servicing reps and local stewards.",
         "Implement a Universal Digital Grievance Tracking System allowing members to see the status, history, and notes of their case in real-time.",
         "Expand specialized legal and safety support staff to provide 24/7 assistance for complex industrial hazards and legal challenges.",
-        "Create a 'Best Practices' digital library where locals can share successful strategies, contract language, and organizing wins.",
         "Institutionalize 'Shadowing Programs' where new stewards learn from veteran leaders on the shop floor before taking office."
       ],
       memberMessage: "Every member deserves representation that is trained to the highest level. We will settle for nothing less."
