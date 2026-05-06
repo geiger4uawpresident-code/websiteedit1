@@ -6,9 +6,9 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 10.2%;
-    --primary: 40 50% 56%; /* #C5A059 Gold */
+    --primary: 40 50% 56%; /* #C5A059 Campaign Gold */
     --primary-foreground: 0 0% 100%;
-    --muted: 38 29% 90%; /* #D4C4A8 Tan */
+    --muted: 38 29% 90%; /* #D4C4A8 Campaign Tan */
     --muted-foreground: 0 0% 45.1%;
     --border: 0 0% 89.8%;
     --ring: 40 50% 56%;
@@ -25,31 +25,12 @@
     --input: 0 0% 89.8%;
     --radius: 0.75rem;
   }
-  .dark {
-    --background: 0 0% 10.2%;
-    --foreground: 0 0% 98%;
-    --primary: 40 50% 56%;
-    --primary-foreground: 0 0% 10.2%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --border: 0 0% 14.9%;
-    --ring: 40 50% 56%;
-    --card: 0 0% 10.2%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 10.2%;
-    --popover-foreground: 0 0% 98%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 10.2%;
-    --input: 0 0% 14.9%;
-  }
   * {
     @apply border-border;
   }
   html {
     scroll-behavior: smooth;
-    /* 90px ensures headings aren't hidden behind the fixed navbar on scroll */
+    /* Aligns section headers below the sticky navbar */
     scroll-padding-top: 90px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -58,7 +39,7 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-  /* Branded scrollbar using the gold palette */
+  /* Custom Campaign Scrollbar */
   ::-webkit-scrollbar {
     width: 8px;
   }

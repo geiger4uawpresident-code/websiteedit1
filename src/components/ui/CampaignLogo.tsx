@@ -11,6 +11,7 @@ export function CampaignLogo({
   size = 'md'
 }: CampaignLogoProps) {
   const uniqueId = useId();
+  // Sanitize ID for SVG reference safety
   const pathId = `curve-${uniqueId.replace(/:/g, '')}`;
   const sizeMap = {
     sm: 'h-8 w-8',
@@ -43,7 +44,7 @@ export function CampaignLogo({
           TG
         </text>
       </svg>
-      {/* 2026 Circular Text */}
+      {/* 2026 Circular Text Decoration */}
       <svg className="absolute inset-0 w-full h-full -rotate-90 pointer-events-none" viewBox="0 0 100 100">
         <path
           id={pathId}
