@@ -1,18 +1,16 @@
-import React, { useId } from 'react';
+import React from 'react';
+import { Fist } from 'lucide-react';
 import { cn } from '@/lib/utils';
 interface CampaignLogoProps {
   className?: string;
   variant?: 'gold-on-black' | 'black-on-gold';
   size?: 'sm' | 'md' | 'lg' | 'xl';
 }
-export function CampaignLogo({
-  className,
+export function CampaignLogo({ 
+  className, 
   variant = 'gold-on-black',
-  size = 'md'
+  size = 'md' 
 }: CampaignLogoProps) {
-  const uniqueId = useId();
-  // Sanitize ID for SVG reference safety by removing characters that break CSS selectors
-  const pathId = `curve-${uniqueId.replace(/[^a-zA-Z0-9]/g, '')}`;
   const sizeMap = {
     sm: 'h-8 w-8',
     md: 'h-10 w-10',
@@ -20,56 +18,23 @@ export function CampaignLogo({
     xl: 'h-24 w-24 md:h-32 md:w-32'
   };
   const bgClass = variant === 'gold-on-black' ? 'bg-campaign-black' : 'bg-campaign-gold';
-  const iconClass = variant === 'gold-on-black' ? 'fill-campaign-gold' : 'fill-campaign-black';
-  const textClass = variant === 'gold-on-black' ? 'fill-campaign-gold' : 'fill-campaign-black';
+  const iconClass = variant === 'gold-on-black' ? 'text-campaign-gold' : 'text-campaign-black';
   return (
     <div className={cn(
-      "relative rounded-full flex items-center justify-center shadow-xl transition-transform hover:rotate-6 duration-300 select-none shrink-0",
+      "relative rounded-full flex items-center justify-center shadow-xl transition-transform hover:rotate-6 duration-300 select-none",
       sizeMap[size],
       bgClass,
       className
     )}>
-      {/* Central Initials */}
-      <svg
-        viewBox="0 0 100 100"
-        className={cn("w-full h-full", iconClass)}
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <text
-          x="50%"
-          y="52%"
-          textAnchor="middle"
-          dominantBaseline="middle"
-          fontSize="32"
-          className="font-display font-black"
-          style={{ pointerEvents: 'none' }}
-        >
-          TG
-        </text>
-      </svg>
-      {/* 2026 Circular Text Decoration */}
-      <svg 
-        className="absolute inset-0 w-full h-full -rotate-90 pointer-events-none" 
-        viewBox="0 0 100 100"
-        aria-hidden="true"
-      >
-        <defs>
-          <path
-            id={pathId}
-            d="M 50, 50 m -38, 0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"
-          />
-        </defs>
-        <text
-          className={cn("font-black uppercase", textClass)}
-          fontSize="11"
-          letterSpacing="0.2em"
-        >
-          <textPath
-            href={`#${pathId}`}
-            startOffset="25%"
-            textAnchor="middle"
-          >
+      <Fist className={cn("w-1/2 h-1/2", iconClass)} />
+      <svg className="absolute inset-0 w-full h-full -rotate-90 pointer-events-none" viewBox="0 0 100 100">
+        <path
+          id="curve"
+          fill="transparent"
+          d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+        />
+        <text className={cn("text-[11px] font-black tracking-[0.2em] uppercase fill-current", iconClass)}>
+          <textPath href="#curve" startOffset="25%" textAnchor="middle">
             2026
           </textPath>
         </text>
