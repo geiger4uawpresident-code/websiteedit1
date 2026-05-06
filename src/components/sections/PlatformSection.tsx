@@ -31,10 +31,10 @@ export function PlatformSection() {
       problem: "The Independent Monitor found: an ongoing culture of fear, retaliation, manipulation of compliance, and weakened financial oversight. This was not just about bad individuals — it was a system of unaccountable power that operated without a budget, without transparency, and without consequence. Members voted for reform. We have an obligation to deliver it. The union is in financial peril and we have to get our house under control.",
       commitments: [
         "Implement real-time forensic auditing of all international and regional expenditures accessible via a secure member portal.",
-        "Establish an independent Member Oversight Committee with the constitutional power to subpoena financial records and report directly to the membership.",
-        "Mandatory 'Constitutional Town Halls' held 30 days prior to any major Executive Board vote on policy changes or administrative expenditures.",
+        "Establish an Independent Member Oversight Committee with the constitutional power to subpoena financial records and report directly to the membership.",
+        "Mandatory 'Constitutional Town Halls' held 30 days prior to any major International Executive Board vote on policy changes or administrative expenditures.",
         "Strict 'No-Gift' policy for all elected officials with immediate removal for violations and a ban on corporate-funded travel.",
-        "Direct election of all international representatives to ensure they answer to the members they service, not the people who appoint them."
+        "Direct election of all International Representatives to ensure they answer to the members they service, not the people who appoint them."
       ],
       memberMessage: "Members voted for reform. The Monitor found an ongoing culture of fear and no budget. We owe it to every member to deliver something different — not someday, but on day one."
     },
