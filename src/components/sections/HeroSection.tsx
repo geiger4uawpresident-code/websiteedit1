@@ -46,15 +46,15 @@ export function HeroSection() {
           >
             <CampaignLogo variant="black-on-gold" size="lg" className="shadow-2xl shadow-campaign-gold/30" />
           </motion.div>
-          <span className="inline-block px-6 py-2 rounded-full bg-campaign-gold text-white text-xs font-bold uppercase tracking-[0.2em] shadow-lg shadow-campaign-gold/20">
+          <span className="inline-block px-6 py-2 rounded-full bg-campaign-gold text-white text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] shadow-lg shadow-campaign-gold/20">
             Prepared. Democratic. Accountable.
           </span>
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-black text-white leading-[1.1] uppercase tracking-tight text-balance">
+          <h1 className="text-[2.5rem] leading-[1] sm:text-6xl md:text-7xl lg:text-8xl font-display font-black text-white uppercase tracking-tight text-balance">
             Tricia Geiger <br />
-            <span className="text-campaign-gold italic">for UAW President</span>
+            <span className="text-campaign-gold italic text-[1.8rem] sm:text-inherit">for UAW President</span>
           </h1>
-          <p className="text-lg md:text-2xl text-campaign-tan max-w-3xl mx-auto font-medium drop-shadow-sm leading-relaxed px-4 opacity-90 tracking-tight text-balance">
-            One Union. One Movement. Building a transparent and <span className="border-b-2 sm:border-b-4 border-campaign-red/80 pb-0.5 sm:pb-1">accountable</span> future for every member.
+          <p className="text-base sm:text-lg md:text-2xl text-campaign-tan max-w-3xl mx-auto font-medium drop-shadow-sm leading-relaxed px-4 opacity-90 tracking-tight text-balance">
+            One Union. One Movement. Building a transparent and <span className="border-b-2 sm:border-b-4 border-campaign-red/90 pb-0.5 sm:pb-1 text-white font-bold">accountable</span> future for every member.
           </p>
         </motion.div>
         <motion.div
@@ -72,11 +72,10 @@ export function HeroSection() {
           className="flex flex-col items-center gap-4"
         >
           <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto items-center justify-center">
-            {/* CTA text must be "Sign Me Up" per client branding */}
-            <Button asChild size="lg" className="bg-campaign-gold hover:opacity-95 text-white font-bold h-14 px-10 sm:w-64 transition-all active:scale-95 shadow-xl shadow-campaign-gold/20 backdrop-blur-sm">
+            <Button asChild size="lg" className="bg-campaign-gold hover:opacity-95 text-white font-bold h-14 px-10 w-full sm:w-64 transition-all active:scale-95 shadow-xl shadow-campaign-gold/20 backdrop-blur-sm">
               <a href="#involve">Sign Me Up</a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-white/10 hover:border-campaign-gold hover:text-white h-14 px-10 sm:w-64 transition-all active:scale-95 backdrop-blur-sm">
+            <Button asChild variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-white/10 hover:border-campaign-gold hover:text-white h-14 px-10 w-full sm:w-64 transition-all active:scale-95 backdrop-blur-sm">
               <a href="#platform">Read the Platform</a>
             </Button>
           </div>

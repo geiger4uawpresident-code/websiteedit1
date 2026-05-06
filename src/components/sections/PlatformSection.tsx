@@ -71,7 +71,7 @@ export function PlatformSection() {
       id: "04",
       title: "Reimagining National Political Action & CAP",
       icon: Landmark,
-      problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on fundamental worker protections. We have been too quick to endorse and too slow to hold elected officials accountability. We must return to a model where we use our political weight to move the needle for all workers, not just to gain access to the halls of power.",
+      problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on fundamental worker protections. We have been too quick to endorse and too slow to hold elected officials accountable. We must return to a model where we use our political weight to move the needle for all workers, not just to gain access to the halls of power.",
       commitments: [
         "Tie all V-CAP endorsements strictly to a 'Labor-First' scorecard focused on anti-tier, anti-scab, and card-check legislation.",
         "Grant local councils Veto Power over regional endorsements that conflict with local member priorities or candidate records.",
@@ -251,7 +251,7 @@ export function PlatformSection() {
                               <div className="mt-1 bg-campaign-gold/10 p-1.5 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
                                 <ChevronRight strokeWidth={3} className="w-4 h-4 md:w-[18px] md:h-[18px]" />
                               </div>
-                              <span className="text-sm md:text-base lg:text-lg font-medium text-gray-800 leading-relaxed group-hover:text-campaign-black transition-colors">
+                              <span className="text-sm md:text-base lg:text-lg font-medium text-gray-800 leading-relaxed group-hover:text-campaign-black transition-colors text-balance">
                                 {commitment}
                               </span>
                             </li>
@@ -273,9 +273,9 @@ export function PlatformSection() {
           className="mt-16 md:mt-24 text-center p-8 md:p-16 bg-campaign-black rounded-[2.5rem] text-white shadow-2xl border-b-[10px] border-campaign-gold relative overflow-hidden"
         >
           <Quote className="absolute top-8 left-8 text-campaign-gold/5 w-24 h-24 md:w-32 md:h-32 rotate-12" />
-          <div className="relative z-10">
-            <Quote className="mx-auto text-campaign-gold mb-6 md:mb-8" size={48} />
-            <h3 className="text-xl md:text-3xl lg:text-4xl font-black italic mb-6 md:mb-8 max-w-4xl mx-auto leading-tight md:leading-snug">
+          <div className="relative z-10 flex flex-col items-center">
+            <Quote className="text-campaign-gold mb-6 md:mb-8" size={48} />
+            <h3 className="text-xl md:text-3xl lg:text-4xl font-black italic mb-6 md:mb-8 max-w-4xl mx-auto leading-tight md:leading-snug text-balance">
               "We are not just electing a president. We are deciding who we are as a movement!"
             </h3>
             <p className="text-campaign-gold font-black uppercase tracking-[0.3em] text-sm md:text-lg">
