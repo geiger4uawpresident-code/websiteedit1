@@ -224,7 +224,10 @@ export function PlatformSection() {
                           {p.title}
                         </CardTitle>
                       </div>
-                      <div className="pt-6 md:pt-8 border-t border-white/10 relative z-10">
+                      <div className="pt-6 md:pt-8 border-t border-white/10 relative z-10 space-y-4">
+                        <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">
+                          Member-Facing Message
+                        </h4>
                         <p className="text-base md:text-lg lg:text-xl italic font-medium leading-relaxed text-white/90">
                           "{p.memberMessage}"
                         </p>
@@ -235,8 +238,8 @@ export function PlatformSection() {
                     <CardContent className="lg:w-2/3 p-8 md:p-10 lg:p-12 space-y-10 md:space-y-12 flex flex-col justify-center">
                       <div className="space-y-4">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</h4>
-                        <div className="border-l-4 border-campaign-gold bg-campaign-gold/5 p-5 md:p-8 rounded-r-xl shadow-sm transition-colors hover:bg-campaign-gold/[0.08]">
-                          <p className="text-gray-700 text-sm md:text-base lg:text-lg leading-relaxed">
+                        <div className="border-l-4 border-campaign-gold bg-campaign-gold/[0.04] p-5 md:p-8 rounded-r-xl shadow-sm transition-colors hover:bg-campaign-gold/[0.08]">
+                          <p className="text-gray-800 text-sm md:text-base lg:text-lg leading-relaxed">
                             {p.problem}
                           </p>
                         </div>
