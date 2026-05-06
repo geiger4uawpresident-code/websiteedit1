@@ -19,6 +19,13 @@ export function Footer() {
     { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/geiger_triciageiger4uaw/" },
     { name: "TikTok", icon: TikTokIcon, href: "https://www.tiktok.com/@geiger4uaw" },
   ], []);
+  const footerNavLinks = useMemo(() => [
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
+    { name: 'Platform', href: '#platform' },
+    { name: 'Join Us', href: '#involve' },
+    { name: 'Resources', href: '#resources' },
+  ], []);
   const handleLegalClick = (e: React.MouseEvent, type: string) => {
     e.preventDefault();
     toast.info(`${type} Coming Soon`, {
@@ -59,10 +66,13 @@ export function Footer() {
           <div className="space-y-6">
             <h4 className="font-bold uppercase tracking-widest text-campaign-gold text-sm">Navigation</h4>
             <ul className="space-y-3">
-              <li><a href="#home" className="text-campaign-tan/70 hover:text-white hover:translate-x-1 inline-block transition-all">Home</a></li>
-              <li><a href="#about" className="text-campaign-tan/70 hover:text-white hover:translate-x-1 inline-block transition-all">Meet Tricia</a></li>
-              <li><a href="#platform" className="text-campaign-tan/70 hover:text-white hover:translate-x-1 inline-block transition-all">The Platform</a></li>
-              <li><a href="#involve" className="text-campaign-tan/70 hover:text-white hover:translate-x-1 inline-block transition-all">Get Involved</a></li>
+              {footerNavLinks.map((link) => (
+                <li key={link.name}>
+                  <a href={link.href} className="text-campaign-tan/70 hover:text-white hover:translate-x-1 inline-block transition-all">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="space-y-6">

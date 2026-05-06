@@ -207,7 +207,7 @@ export function PlatformSection() {
                 <Card className="border-none shadow-2xl overflow-hidden bg-white hover:shadow-campaign-gold/10 transition-shadow duration-500">
                   <div className="flex flex-col lg:flex-row min-h-[500px]">
                     {/* Sidebar Pillar Info */}
-                    <div className="lg:w-1/3 bg-campaign-black text-white px-8 py-12 md:p-12 flex flex-col justify-between">
+                    <div className="lg:w-1/3 bg-campaign-black text-white px-5 py-10 md:p-12 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center justify-between mb-10">
                           <span className="text-campaign-gold/20 font-black text-6xl md:text-8xl">{p.id}</span>
@@ -226,7 +226,7 @@ export function PlatformSection() {
                       </div>
                     </div>
                     {/* Content Details */}
-                    <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-12 flex flex-col justify-center">
+                    <CardContent className="lg:w-2/3 px-5 py-10 md:p-12 space-y-10 md:space-y-12 flex flex-col justify-center">
                       <div className="space-y-4">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</h4>
                         <div className="border-l-4 border-campaign-gold bg-campaign-gold/5 p-5 sm:p-8 rounded-r-xl shadow-sm">
