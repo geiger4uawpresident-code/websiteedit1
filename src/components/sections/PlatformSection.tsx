@@ -171,6 +171,7 @@ export function PlatformSection() {
             </p>
           </motion.div>
         </div>
+        {/* Top Level Brand Values */}
         <div className="grid md:grid-cols-3 gap-8 mb-24 items-stretch">
           {brandPillars.map((bp, i) => (
             <motion.div
@@ -191,6 +192,7 @@ export function PlatformSection() {
             </motion.div>
           ))}
         </div>
+        {/* Detailed Pillars */}
         <div className="space-y-16 lg:space-y-24">
           {pillars.map((p) => {
             const Icon = p.icon;
@@ -204,6 +206,7 @@ export function PlatformSection() {
               >
                 <Card className="border-none shadow-2xl overflow-hidden bg-white hover:shadow-campaign-gold/10 transition-shadow duration-500">
                   <div className="flex flex-col lg:flex-row min-h-[500px]">
+                    {/* Sidebar with Pillar Info */}
                     <div className="lg:w-1/3 bg-campaign-black text-white px-8 py-12 md:p-12 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center justify-between mb-10">
@@ -216,12 +219,14 @@ export function PlatformSection() {
                           {p.title}
                         </CardTitle>
                       </div>
+                      {/* Member Quote Section - No Header per client feedback */}
                       <div className="pt-8 border-t border-white/10">
                         <p className="text-lg md:text-xl italic font-medium leading-relaxed text-white/90">
                           "{p.memberMessage}"
                         </p>
                       </div>
                     </div>
+                    {/* Main Content Area */}
                     <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-12 flex flex-col justify-center">
                       <div className="space-y-4">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</h4>
@@ -251,6 +256,7 @@ export function PlatformSection() {
             );
           })}
         </div>
+        {/* Global Closing Quote */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

@@ -10,14 +10,14 @@ import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/sonner';
 /**
  * HomePage: The primary orchestration component for Tricia Geiger's 2026 UAW Presidential campaign.
- * 
+ *
  * Strategic Narrative Flow:
- * 1. Hero: High-impact branding and launch video.
- * 2. Bio: Flint roots and 20 years of labor service.
+ * 1. Hero: High-impact branding, launch video, and primary conversion CTA (Sign Me Up).
+ * 2. Bio: Flint roots, multi-generational UAW history, and 20 years of service.
  * 3. Platform: The 8 Strategic Pillars (Verbatim).
- * 4. Involve: Actionable sign-up funnels.
- * 5. Endorsements: Rank-and-file validation.
- * 6. Resources: Organizing tools.
+ * 4. Involve: Actionable dual sign-up funnels for updates and amplifiers.
+ * 5. Endorsements: Rank-and-file validation from local leaders.
+ * 6. Resources: Organizing tools and campaign materials.
  */
 export function HomePage() {
   return (
