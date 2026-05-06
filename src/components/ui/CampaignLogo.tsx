@@ -11,7 +11,7 @@ export function CampaignLogo({
   size = 'md'
 }: CampaignLogoProps) {
   const uniqueId = useId();
-  // Sanitize ID for SVG reference safety
+  // Sanitize ID for SVG reference safety by removing colons which can break selector lookups
   const pathId = `curve-${uniqueId.replace(/:/g, '')}`;
   const sizeMap = {
     sm: 'h-8 w-8',
@@ -39,20 +39,31 @@ export function CampaignLogo({
           y="52%"
           textAnchor="middle"
           dominantBaseline="middle"
-          className="font-display font-black text-[32px]"
+          fontSize="32"
+          className="font-display font-black"
+          style={{ pointerEvents: 'none' }}
         >
           TG
         </text>
       </svg>
-      {/* 2026 Circular Text Decoration */}
+      {/* 2026 Circular Text Decoration - Centered and Scale-Independent */}
       <svg className="absolute inset-0 w-full h-full -rotate-90 pointer-events-none" viewBox="0 0 100 100">
-        <path
-          id={pathId}
-          fill="transparent"
-          d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
-        />
-        <text className={cn("text-[11px] font-black tracking-[0.2em] uppercase", textClass)}>
-          <textPath href={`#${pathId}`} startOffset="25%" textAnchor="middle">
+        <defs>
+          <path
+            id={pathId}
+            d="M 50, 50 m -38, 0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"
+          />
+        </defs>
+        <text 
+          className={cn("font-black uppercase", textClass)}
+          fontSize="11"
+          letterSpacing="0.2em"
+        >
+          <textPath 
+            href={`#${pathId}`} 
+            startOffset="25%" 
+            textAnchor="middle"
+          >
             2026
           </textPath>
         </text>

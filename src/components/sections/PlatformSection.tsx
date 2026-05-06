@@ -171,7 +171,7 @@ export function PlatformSection() {
             </p>
           </motion.div>
         </div>
-        {/* Top Level Brand Values */}
+        {/* Brand Values Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-24 items-stretch">
           {brandPillars.map((bp, i) => (
             <motion.div
@@ -192,7 +192,7 @@ export function PlatformSection() {
             </motion.div>
           ))}
         </div>
-        {/* Detailed Pillars */}
+        {/* Detailed Strategic Pillars */}
         <div className="space-y-16 lg:space-y-24">
           {pillars.map((p) => {
             const Icon = p.icon;
@@ -206,7 +206,7 @@ export function PlatformSection() {
               >
                 <Card className="border-none shadow-2xl overflow-hidden bg-white hover:shadow-campaign-gold/10 transition-shadow duration-500">
                   <div className="flex flex-col lg:flex-row min-h-[500px]">
-                    {/* Sidebar with Pillar Info */}
+                    {/* Sidebar Pillar Info */}
                     <div className="lg:w-1/3 bg-campaign-black text-white px-8 py-12 md:p-12 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center justify-between mb-10">
@@ -219,28 +219,27 @@ export function PlatformSection() {
                           {p.title}
                         </CardTitle>
                       </div>
-                      {/* Member Quote Section - No Header per client feedback */}
                       <div className="pt-8 border-t border-white/10">
                         <p className="text-lg md:text-xl italic font-medium leading-relaxed text-white/90">
                           "{p.memberMessage}"
                         </p>
                       </div>
                     </div>
-                    {/* Main Content Area */}
+                    {/* Content Details */}
                     <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-12 flex flex-col justify-center">
                       <div className="space-y-4">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</h4>
-                        <div className="border-l-4 border-campaign-gold bg-campaign-gold/5 p-6 sm:p-8 rounded-r-xl shadow-sm">
-                          <p className="text-gray-700 text-lg leading-relaxed">
+                        <div className="border-l-4 border-campaign-gold bg-campaign-gold/5 p-5 sm:p-8 rounded-r-xl shadow-sm">
+                          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
                             {p.problem}
                           </p>
                         </div>
                       </div>
                       <div className="space-y-6">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</h4>
-                        <ul className="grid gap-5 md:gap-6">
+                        <ul className="grid gap-4 md:gap-6">
                           {p.commitments.map((commitment, index) => (
-                            <li key={`${p.id}-commitment-${index}`} className="flex gap-4 pb-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group border-b border-gray-50 last:border-0 last:pb-0 transition-colors">
+                            <li key={`${p.id}-commitment-${index}`} className="flex gap-4 pb-4 text-sm md:text-lg leading-relaxed text-gray-800 items-start group border-b border-gray-50 last:border-0 last:pb-0 transition-colors">
                               <div className="mt-1.5 bg-campaign-gold/10 p-1.5 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
                                 <ChevronRight size={18} strokeWidth={3} />
                               </div>
@@ -256,7 +255,7 @@ export function PlatformSection() {
             );
           })}
         </div>
-        {/* Global Closing Quote */}
+        {/* Closing Verbatim Quote */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
