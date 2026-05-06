@@ -81,7 +81,7 @@ export function HeroSection() {
             <Button asChild size="lg" className="bg-campaign-gold hover:opacity-95 text-white font-bold h-14 px-10 w-full sm:w-64 transition-all active:scale-95 shadow-xl shadow-campaign-gold/20 backdrop-blur-sm text-base md:text-lg">
               <a href="#involve">Sign Me Up</a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-white/10 hover:border-campaign-gold hover:text-white h-14 px-10 w-full sm:w-64 transition-all active:scale-95 backdrop-blur-sm text-base md:text-lg">
+            <Button asChild variant="outline" size="lg" className="border-campaign-tan/60 text-white hover:bg-white/15 hover:border-campaign-gold hover:text-white h-14 px-10 w-full sm:w-64 transition-all active:scale-95 backdrop-blur-md bg-white/5 text-base md:text-lg">
               <a href="#platform">Read the Platform</a>
             </Button>
           </div>

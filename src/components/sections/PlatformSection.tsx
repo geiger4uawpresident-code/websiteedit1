@@ -174,7 +174,6 @@ export function PlatformSection() {
             </p>
           </motion.div>
         </div>
-        {/* Brand Values Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16 md:mb-24 items-stretch">
           {brandPillars.map((bp, i) => (
             <motion.div
@@ -195,7 +194,6 @@ export function PlatformSection() {
             </motion.div>
           ))}
         </div>
-        {/* Detailed Strategic Pillars */}
         <div className="space-y-12 md:space-y-16 lg:space-y-24">
           {pillars.map((p) => {
             const Icon = p.icon;
@@ -209,7 +207,6 @@ export function PlatformSection() {
               >
                 <Card className="border-none shadow-2xl overflow-hidden bg-white hover:shadow-campaign-gold/15 transition-all duration-500 rounded-[2rem]">
                   <div className="flex flex-col lg:flex-row min-h-[500px]">
-                    {/* Sidebar Pillar Info */}
                     <div className="lg:w-1/3 bg-campaign-black text-white p-8 md:p-10 lg:p-12 flex flex-col justify-between relative overflow-hidden shrink-0">
                       <div className="relative z-10">
                         <div className="flex items-center justify-between mb-8 lg:mb-12">
@@ -228,13 +225,12 @@ export function PlatformSection() {
                         <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-campaign-gold">
                           Member-Facing Message
                         </h4>
-                        <p className="text-base md:text-lg lg:text-xl italic font-medium leading-relaxed text-white/95">
+                        <p className="text-lg md:text-xl lg:text-2xl italic font-bold leading-tight text-white/95 text-balance">
                           "{p.memberMessage}"
                         </p>
                       </div>
                       <Icon className="absolute -bottom-12 -right-12 w-64 h-64 text-white/5 rotate-[15deg] pointer-events-none" />
                     </div>
-                    {/* Content Details */}
                     <CardContent className="lg:w-2/3 p-8 md:p-12 lg:p-16 space-y-12 md:space-y-16 flex flex-col justify-center bg-white">
                       <div className="space-y-6">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-campaign-gold flex items-center gap-2">
@@ -250,7 +246,7 @@ export function PlatformSection() {
                         <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-campaign-black flex items-center gap-2">
                           <span className="w-8 h-px bg-campaign-black"></span> Strategic Commitments
                         </h4>
-                        <ul className="grid gap-4 md:gap-6">
+                        <ul className="grid gap-6 md:gap-8">
                           {p.commitments.map((commitment, index) => (
                             <li
                               key={`${p.id}-commitment-${index}`}
@@ -273,7 +269,6 @@ export function PlatformSection() {
             );
           })}
         </div>
-        {/* Closing Verbatim Quote */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
