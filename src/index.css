@@ -39,7 +39,7 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-  /* Custom Campaign Scrollbar */
+  /* Custom Campaign Scrollbar using #C5A059 */
   ::-webkit-scrollbar {
     width: 8px;
   }

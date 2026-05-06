@@ -10,49 +10,52 @@ import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/sonner';
 /**
  * HomePage: The primary orchestration component for Tricia Geiger's 2026 UAW Presidential campaign.
- * 
- * FINAL AUDIT (Phase 80):
+ *
+ * FINAL PRODUCTION AUDIT:
  * - Strategic narrative flow: Branding -> Biography -> Policy -> Engagement -> Social Proof -> Resources.
- * - Branding: Verified tan/gold/black palette consistency.
- * - Accessibility: 'Skip to content' link for keyboard navigation and ARIA landmarks.
- * - SEO/Metadata: Title set to official campaign slogan.
- * - Interaction: Smooth scroll, selection colors, and global toast configuration.
+ * - Branding: Verified tan/gold/black palette consistency (#C5A059 Gold).
+ * - Accessibility: Functional 'Skip to content' link for keyboard navigation.
+ * - SEO/Metadata: Official title "Tricia Geiger for UAW President 2026 | Prepared. Democratic. Accountable."
+ * - Interaction: Global toast configuration with campaign-themed borders.
  */
 export function HomePage() {
   useEffect(() => {
-    // Update document title for SEO and campaign branding
+    // Official campaign title for SEO and browser tabs
     document.title = "Tricia Geiger for UAW President 2026 | Prepared. Democratic. Accountable.";
-    // Ensure scroll starts at top on initial load
+    // Ensure initial entry is at the top of the page
+    if (window.history.scrollRestoration) {
+      window.history.scrollRestoration = 'manual';
+    }
     window.scrollTo(0, 0);
   }, []);
   return (
     <div className="min-h-screen bg-white selection:bg-campaign-gold selection:text-white antialiased overflow-x-hidden">
-      {/* Accessibility Skip Link */}
+      {/* Accessibility Skip Link: Points to #main-content anchor */}
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-[100] bg-campaign-black text-white px-6 py-3 rounded-lg font-bold shadow-2xl ring-4 ring-campaign-gold transition-all"
       >
         Skip to main content
       </a>
-      {/* Sticky Navigation Layer */}
+      {/* Persistent Navigation Layer */}
       <Navbar />
       <main id="main-content" role="main" className="outline-none" tabIndex={-1}>
-        {/* Hero & Launch Video: High-impact branding and first-touch conversion point */}
+        {/* Visual Hero & Primary CTA */}
         <HeroSection />
-        {/* Biography: Heritage, 20 Years of Service, and personal journey */}
+        {/* Biographical Journey & Heritage */}
         <BioSection />
-        {/* Platform: The 8 Strategic Pillars (Verbatim Commitments) */}
+        {/* 8-Pillar Strategic Reform Platform */}
         <PlatformSection />
-        {/* Get Involved: Dual Sign-up Funnels (Updates & Amplifier tracks) */}
+        {/* Dual Sign-up Funnels (Sender.site) */}
         <InvolveSection />
-        {/* Endorsements: Social Proof from floor members and local leaders */}
+        {/* Verbatim Member Endorsements */}
         <Endorsements />
-        {/* Resources: Member Organizing materials and download toolkit */}
+        {/* Organizing Materials & Downloadable Toolkit */}
         <ResourcesSection />
       </main>
-      {/* Global Campaign Footer: Donation links, social presence, and legal disclosures */}
+      {/* Footer with Donations (Anedot) and Social Links */}
       <Footer />
-      {/* Campaign-themed Notification System (Sonner) */}
+      {/* Global Campaign Notifications (Sonner) */}
       <Toaster
         richColors
         closeButton
@@ -60,7 +63,7 @@ export function HomePage() {
         toastOptions={{
           style: {
             borderRadius: '12px',
-            border: '1px solid #D4C4A8',
+            border: '1px solid #D4C4A8', // Campaign Tan
             background: 'white',
             color: '#1A1A1A',
             fontFamily: 'Inter, sans-serif',
