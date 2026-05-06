@@ -157,7 +157,7 @@ export function PlatformSection() {
     }
   ], []);
   return (
-    <section id="platform" className="py-16 md:py-24 bg-campaign-tan/5 scroll-mt-20">
+    <section id="platform" className="py-16 md:py-24 bg-campaign-tan/5 scroll-mt-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 md:mb-20 space-y-4">
           <motion.div
@@ -166,10 +166,10 @@ export function PlatformSection() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-display font-black text-campaign-black uppercase tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-display font-black text-campaign-black uppercase tracking-tight leading-[1.1]">
               The 2026 Strategic Platform
             </h2>
-            <p className="text-muted-foreground text-base sm:text-lg md:text-xl max-w-3xl mx-auto mt-4 md:mt-6">
+            <p className="text-muted-foreground text-base sm:text-lg md:text-xl max-w-3xl mx-auto mt-4 md:mt-6 leading-relaxed">
               A Member-First blueprint to restore power, transparency, and results to the membership.
             </p>
           </motion.div>
@@ -183,7 +183,7 @@ export function PlatformSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white p-6 md:p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5 flex flex-col h-full hover:shadow-2xl hover:shadow-campaign-gold/10 transition-all group"
+              className="bg-white p-6 md:p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5 flex flex-col h-full hover:shadow-2xl hover:shadow-campaign-gold/10 transition-all group relative"
             >
               <h3 className="text-xl md:text-2xl font-black text-campaign-black mb-4 uppercase tracking-tighter shrink-0">{bp.title}</h3>
               <p className="text-muted-foreground mb-6 md:mb-8 leading-relaxed flex-grow text-sm md:text-base">
@@ -207,55 +207,59 @@ export function PlatformSection() {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true, margin: "-100px" }}
               >
-                <Card className="border-none shadow-2xl overflow-hidden bg-white hover:shadow-campaign-gold/10 transition-all duration-500 rounded-3xl">
-                  <div className="flex flex-col lg:flex-row min-h-[450px]">
+                <Card className="border-none shadow-2xl overflow-hidden bg-white hover:shadow-campaign-gold/15 transition-all duration-500 rounded-[2rem]">
+                  <div className="flex flex-col lg:flex-row min-h-[500px]">
                     {/* Sidebar Pillar Info */}
-                    <div className="lg:w-1/3 bg-campaign-black text-white p-8 md:p-10 lg:p-12 flex flex-col justify-between relative overflow-hidden">
+                    <div className="lg:w-1/3 bg-campaign-black text-white p-8 md:p-10 lg:p-12 flex flex-col justify-between relative overflow-hidden shrink-0">
                       <div className="relative z-10">
-                        <div className="flex items-center justify-between mb-8 lg:mb-10">
-                          <span className="text-campaign-gold/20 font-black text-5xl md:text-7xl lg:text-8xl leading-none">
+                        <div className="flex items-center justify-between mb-8 lg:mb-12">
+                          <span className="text-campaign-gold/20 font-black text-6xl md:text-8xl leading-none tracking-tighter">
                             {p.id}
                           </span>
-                          <div className="bg-campaign-gold/20 p-4 rounded-2xl text-campaign-gold backdrop-blur-sm">
-                            <Icon className="w-8 h-8 md:w-10 md:h-10" />
+                          <div className="bg-campaign-gold/20 p-4 rounded-2xl text-campaign-gold backdrop-blur-sm shadow-inner">
+                            <Icon className="w-8 h-8 md:w-12 md:h-12" />
                           </div>
                         </div>
-                        <CardTitle className="text-2xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight leading-tight mb-6">
+                        <CardTitle className="text-2xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight leading-[1.2] mb-6 drop-shadow-sm">
                           {p.title}
                         </CardTitle>
                       </div>
-                      <div className="pt-6 md:pt-8 border-t border-white/10 relative z-10 space-y-4">
-                        <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">
+                      <div className="pt-8 border-t border-white/10 relative z-10 space-y-4 bg-gradient-to-t from-campaign-black/20 to-transparent p-2 -m-2 rounded-xl">
+                        <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-campaign-gold">
                           Member-Facing Message
                         </h4>
-                        <p className="text-base md:text-lg lg:text-xl italic font-medium leading-relaxed text-white/90">
+                        <p className="text-base md:text-lg lg:text-xl italic font-medium leading-relaxed text-white/95">
                           "{p.memberMessage}"
                         </p>
                       </div>
-                      <Icon className="absolute -bottom-10 -right-10 w-48 h-48 text-white/5 rotate-12 pointer-events-none" />
+                      <Icon className="absolute -bottom-12 -right-12 w-64 h-64 text-white/5 rotate-[15deg] pointer-events-none" />
                     </div>
                     {/* Content Details */}
-                    <CardContent className="lg:w-2/3 p-8 md:p-10 lg:p-12 space-y-10 md:space-y-12 flex flex-col justify-center">
-                      <div className="space-y-4">
-                        <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</h4>
-                        <div className="border-l-4 border-campaign-gold bg-campaign-gold/[0.04] p-5 md:p-8 rounded-r-xl shadow-sm transition-colors hover:bg-campaign-gold/[0.08]">
-                          <p className="text-gray-800 text-sm md:text-base lg:text-lg leading-relaxed">
+                    <CardContent className="lg:w-2/3 p-8 md:p-12 lg:p-16 space-y-12 md:space-y-16 flex flex-col justify-center bg-white">
+                      <div className="space-y-6">
+                        <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-campaign-gold flex items-center gap-2">
+                          <span className="w-8 h-px bg-campaign-gold"></span> The Challenge
+                        </h4>
+                        <div className="border-l-[6px] border-campaign-gold bg-campaign-gold/[0.03] p-6 md:p-10 rounded-r-2xl shadow-sm transition-colors hover:bg-campaign-gold/[0.06]">
+                          <p className="text-gray-800 text-sm md:text-base lg:text-lg leading-[1.7] tracking-tight">
                             {p.problem}
                           </p>
                         </div>
                       </div>
-                      <div className="space-y-6">
-                        <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</h4>
-                        <ul className="grid gap-3 md:gap-5">
+                      <div className="space-y-8">
+                        <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-campaign-black flex items-center gap-2">
+                          <span className="w-8 h-px bg-campaign-black"></span> Strategic Commitments
+                        </h4>
+                        <ul className="grid gap-4 md:gap-6">
                           {p.commitments.map((commitment, index) => (
                             <li
                               key={`${p.id}-commitment-${index}`}
-                              className="flex gap-4 p-3 -mx-3 rounded-xl hover:bg-campaign-tan/10 transition-all duration-300 items-start group border-b border-gray-50 last:border-0 last:pb-0"
+                              className="flex gap-5 p-4 -mx-4 rounded-2xl hover:bg-campaign-tan/10 transition-all duration-300 items-start group border-b border-gray-100/50 last:border-0 last:pb-0"
                             >
-                              <div className="mt-1 bg-campaign-gold/10 p-1.5 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
-                                <ChevronRight strokeWidth={3} className="w-4 h-4 md:w-[18px] md:h-[18px]" />
+                              <div className="mt-1.5 bg-campaign-gold/15 p-2 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0 shadow-sm">
+                                <ChevronRight strokeWidth={4} className="w-3.5 h-3.5 md:w-[16px] md:h-[16px]" />
                               </div>
-                              <span className="text-sm md:text-base lg:text-lg font-medium text-gray-800 leading-relaxed group-hover:text-campaign-black transition-colors text-balance">
+                              <span className="text-sm md:text-base lg:text-lg font-bold text-gray-800 leading-[1.6] group-hover:text-campaign-black transition-colors text-balance">
                                 {commitment}
                               </span>
                             </li>
@@ -274,17 +278,21 @@ export function PlatformSection() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-16 md:mt-24 text-center p-8 md:p-16 bg-campaign-black rounded-[2.5rem] text-white shadow-2xl border-b-[10px] border-campaign-gold relative overflow-hidden"
+          className="mt-16 md:mt-24 text-center p-8 md:p-16 lg:p-24 bg-campaign-black rounded-[3rem] text-white shadow-[0_35px_60px_-15px_rgba(0,0,0,0.6)] border-b-[12px] border-campaign-gold relative overflow-hidden"
         >
-          <Quote className="absolute top-8 left-8 text-campaign-gold/5 w-24 h-24 md:w-32 md:h-32 rotate-12" />
+          <Quote className="absolute top-12 left-12 text-campaign-gold/5 w-32 h-32 md:w-48 md:h-48 rotate-12" />
           <div className="relative z-10 flex flex-col items-center">
-            <Quote className="text-campaign-gold mb-6 md:mb-8" size={48} />
-            <h3 className="text-xl md:text-3xl lg:text-4xl font-black italic mb-6 md:mb-8 max-w-4xl mx-auto leading-tight md:leading-snug text-balance">
+            <Quote className="text-campaign-gold mb-8 lg:mb-12" size={56} />
+            <h3 className="text-2xl md:text-4xl lg:text-5xl font-black italic mb-8 lg:mb-12 max-w-5xl mx-auto leading-[1.15] tracking-tight text-balance">
               "We are not just electing a president. We are deciding who we are as a movement!"
             </h3>
-            <p className="text-campaign-gold font-black uppercase tracking-[0.3em] text-sm md:text-lg">
-              Tricia Geiger
-            </p>
+            <div className="flex items-center gap-4">
+              <div className="h-px w-12 bg-campaign-gold/40"></div>
+              <p className="text-campaign-gold font-black uppercase tracking-[0.4em] text-sm md:text-xl">
+                Tricia Geiger
+              </p>
+              <div className="h-px w-12 bg-campaign-gold/40"></div>
+            </div>
           </div>
         </motion.div>
       </div>

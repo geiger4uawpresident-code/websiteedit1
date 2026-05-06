@@ -26,7 +26,7 @@
     --radius: 0.75rem;
   }
   * {
-    @apply border-border;
+    @apply border-border outline-none;
   }
   html {
     scroll-behavior: smooth;
@@ -34,34 +34,50 @@
     scroll-padding-top: 100px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-feature-settings: "rlig" 1, "calt" 1, "kern" 1;
   }
-  /* Custom Campaign Scrollbar using #C5A059 */
+  /* Robust custom focus-visible ring for accessibility */
+  :focus-visible {
+    @apply ring-2 ring-campaign-gold ring-offset-2 ring-offset-background transition-shadow duration-200;
+  }
+  /* Custom Campaign Scrollbar using #C5A059 and #D4C4A8 */
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #F4F1ED;
+    background: #F8F6F2; /* Ultra-light tan */
   }
   ::-webkit-scrollbar-thumb {
-    background: #C5A059;
+    background: #D4C4A8; /* Campaign Tan */
+    border: 2px solid #F8F6F2;
     border-radius: 10px;
+    transition: background 0.3s ease;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #A8884C;
+    background: #C5A059; /* Campaign Gold on hover */
   }
 }
 @layer components {
   .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 xs:py-16 md:py-24 lg:py-32;
   }
   .campaign-heading {
-    @apply font-display font-black uppercase tracking-tight;
+    @apply font-display font-black uppercase tracking-tight leading-[1.1];
   }
-  .campaign-transition {
-    @apply transition-all duration-300 ease-in-out;
+  /* Global smooth transition for interactive elements */
+  .campaign-interactive {
+    @apply transition-all duration-300 ease-in-out hover:opacity-90 active:scale-[0.98];
   }
+}
+/* Optimization for ultra-small mobile devices */
+@media (max-width: 380px) {
+  .section-container {
+    @apply px-3 py-10;
+  }
+  h1 { @apply text-3xl; }
+  h2 { @apply text-2xl; }
 }
