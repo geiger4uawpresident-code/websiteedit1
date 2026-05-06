@@ -11,19 +11,22 @@ import { Toaster } from '@/components/ui/sonner';
 /**
  * HomePage: The primary orchestration component for Tricia Geiger's 2026 UAW Presidential campaign.
  * 
- * FINAL VERIFICATION:
+ * FINAL AUDIT (Phase 80):
  * - Strategic narrative flow: Branding -> Biography -> Policy -> Engagement -> Social Proof -> Resources.
- * - Accessibility 'Skip to content' link for keyboard navigation.
- * - Global toast configuration for consistent feedback.
- * - Optimized for production deployment.
+ * - Branding: Verified tan/gold/black palette consistency.
+ * - Accessibility: 'Skip to content' link for keyboard navigation and ARIA landmarks.
+ * - SEO/Metadata: Title set to official campaign slogan.
+ * - Interaction: Smooth scroll, selection colors, and global toast configuration.
  */
 export function HomePage() {
   useEffect(() => {
     // Update document title for SEO and campaign branding
     document.title = "Tricia Geiger for UAW President 2026 | Prepared. Democratic. Accountable.";
+    // Ensure scroll starts at top on initial load
+    window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="min-h-screen bg-white selection:bg-campaign-gold selection:text-white antialiased">
+    <div className="min-h-screen bg-white selection:bg-campaign-gold selection:text-white antialiased overflow-x-hidden">
       {/* Accessibility Skip Link */}
       <a
         href="#main-content"
@@ -34,22 +37,22 @@ export function HomePage() {
       {/* Sticky Navigation Layer */}
       <Navbar />
       <main id="main-content" role="main" className="outline-none" tabIndex={-1}>
-        {/* Phase 1: High Impact Branding & Launch Video */}
+        {/* Hero & Launch Video: High-impact branding and first-touch conversion point */}
         <HeroSection />
-        {/* Phase 2: Heritage and 20 Years of Service */}
+        {/* Biography: Heritage, 20 Years of Service, and personal journey */}
         <BioSection />
-        {/* Phase 3: The 8 Strategic Pillars (Verbatim Commitments) */}
+        {/* Platform: The 8 Strategic Pillars (Verbatim Commitments) */}
         <PlatformSection />
-        {/* Phase 4: Call to Action & Dual Sign-up Funnels */}
+        {/* Get Involved: Dual Sign-up Funnels (Updates & Amplifier tracks) */}
         <InvolveSection />
-        {/* Phase 5: Social Proof from Local Leaders */}
+        {/* Endorsements: Social Proof from floor members and local leaders */}
         <Endorsements />
-        {/* Phase 6: Member Organizing Resources */}
+        {/* Resources: Member Organizing materials and download toolkit */}
         <ResourcesSection />
       </main>
-      {/* Global Campaign Footer */}
+      {/* Global Campaign Footer: Donation links, social presence, and legal disclosures */}
       <Footer />
-      {/* Campaign-themed Notification System */}
+      {/* Campaign-themed Notification System (Sonner) */}
       <Toaster
         richColors
         closeButton
