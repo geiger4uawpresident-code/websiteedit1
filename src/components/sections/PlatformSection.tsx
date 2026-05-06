@@ -42,7 +42,7 @@ export function PlatformSection() {
       id: "02",
       title: "Bargaining: Preparing for the Fights Ahead",
       icon: Handshake,
-      problem: "The 'Crisis of Tiers' was born from a lack of strategic preparation and transparency. Corporations have spent years refining their ability to use complex contracts to hide concessions, while members were often the last to know the details of the deals that define their lives. We are entering a bargaining climate where automation and 'green transition' are being used as threats. We need a strategy that uses our full economic power and puts the corporation on the defensive.",
+      problem: "The 'Crisis of Tiers' was born from a lack of strategic preparation and transparency. Corporations have spent years refining their ability to use complex contracts to hide concessions, while members were often the last to know the details of the deals that define their lives. We are entering a bargaining climate where automation and 'green transition' are being used as threats. We need a strategy that uses our full economic power and puts the corporation on the defensive. We will no longer accept contracts that trade the future of our new members for the comfort of the current leadership. We are one union, with one standard, and one future.",
       commitments: [
         "Adopt 'Open Bargaining' protocols: Daily digital updates and summarized transcripts of negotiations provided to the membership.",
         "Establish an Economic War Room staffed by labor economists and industry experts to counter corporate misinformation.",
@@ -224,7 +224,6 @@ export function PlatformSection() {
                         </CardTitle>
                       </div>
                       <div className="pt-6 md:pt-8 border-t border-white/10 relative z-10">
-                        {/* No header text here as per client requirement */}
                         <p className="text-base md:text-lg lg:text-xl italic font-medium leading-relaxed text-white/90">
                           "{p.memberMessage}"
                         </p>
