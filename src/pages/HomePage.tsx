@@ -20,7 +20,7 @@ export function HomePage() {
   useEffect(() => {
     // Official campaign title for SEO and browser tab identity
     document.title = "Tricia Geiger for UAW President 2026 | Prepared. Democratic. Accountable.";
-    // Reset scroll position on entry
+    // Reset scroll position on entry for a fresh experience
     if (window.history.scrollRestoration) {
       window.history.scrollRestoration = 'manual';
     }
@@ -42,7 +42,7 @@ export function HomePage() {
         <HeroSection />
         {/* Biographical Narrative & Experience */}
         <BioSection />
-        {/* 8-Pillar Strategic Reform Platform */}
+        {/* 8-Pillar Strategic Reform Platform (Verbatim Directive) */}
         <PlatformSection />
         {/* Dual Sign-up Funnels (Updates & Amplifiers) */}
         <InvolveSection />

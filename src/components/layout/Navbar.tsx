@@ -42,8 +42,8 @@ export function Navbar() {
         aria-label="Campaign Primary Navigation"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          <a 
-            href="#home" 
+          <a
+            href="#home"
             className="flex items-center gap-3 group/logo focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-campaign-gold rounded-full p-1 transition-all"
           >
             <CampaignLogo
@@ -94,7 +94,7 @@ export function Navbar() {
       {/* Mobile Menu Backdrop & Overlay */}
       <div
         className={cn(
-          "md:hidden fixed inset-0 z-[55] bg-white transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] transform overflow-hidden",
+          "md:hidden fixed inset-0 z-[65] bg-white transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] transform overflow-hidden",
           isMobileMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
         )}
       >
@@ -133,7 +133,7 @@ export function Navbar() {
       {/* Visual Blur Backdrop for mobile menu open state */}
       {isMobileMenuOpen && (
         <div
-          className="fixed inset-0 z-[50] bg-black/40 backdrop-blur-sm md:hidden transition-opacity duration-300"
+          className="fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm md:hidden transition-opacity duration-300"
           onClick={() => setIsMobileMenuOpen(false)}
         />
       )}
