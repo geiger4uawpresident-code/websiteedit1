@@ -219,7 +219,6 @@ export function PlatformSection() {
                           {p.title}
                         </CardTitle>
                       </div>
-                      {/* Member Message Verbatim Block - No secondary headers per directive */}
                       <div className="pt-8 border-t border-white/10">
                         <p className="text-lg md:text-xl italic font-medium leading-relaxed text-white/90">
                           "{p.memberMessage}"
