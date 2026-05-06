@@ -18,7 +18,7 @@ interface Pillar {
   id: string;
   title: string;
   icon: LucideIcon;
-  problem: string;
+  problem: string[]; // Updated to support multi-paragraph narratives
   commitments: string[];
   memberMessage: string;
 }
@@ -28,11 +28,14 @@ export function PlatformSection() {
       id: "01",
       title: "Clean Governance & Institutional Reform",
       icon: Shield,
-      problem: "The Independent Monitor found: an ongoing culture of fear, retaliation, manipulation of compliance, and weakened financial oversight. This was not just about bad individuals — it was a system of unaccountable power that operated without a budget, without transparency, and without consequence. Members voted for reform. We have an obligation to deliver it. The union is in financial peril and we have to get our house under control.",
+      problem: [
+        "The Independent Monitor found: an ongoing culture of fear, retaliation, manipulation of compliance, and weakened financial oversight. This was not just about bad individuals — it was a system of unaccountable power that operated without a budget, without transparency, and without consequence.",
+        "Members voted for reform. We have an obligation to deliver it. The union is in financial peril and we have to get our house under control."
+      ],
       commitments: [
         "Implement real-time forensic auditing of all international and regional expenditures accessible via a secure member portal.",
         "Establish an Independent Member Oversight Committee with the constitutional power to subpoena financial records and report directly to the membership.",
-        "Mandatory 'Constitutional Town Halls' held 30 days prior to any major International Executive Board vote on policy changes or administrative expenditures.",
+        "Mandatory 'Constitutional Town Halls' held 30 days prior to any major International Executive Board vote on policy changes.",
         "Strict 'No-Gift' policy for all elected officials with immediate removal for violations and a ban on corporate-funded travel.",
         "Direct election of all International Representatives to ensure they answer to the members they service, not the people who appoint them."
       ],
@@ -42,7 +45,10 @@ export function PlatformSection() {
       id: "02",
       title: "Bargaining: Preparing for the Fights Ahead",
       icon: Handshake,
-      problem: "The issues our members are facing at the bargaining table are more complex than ever before. For years, corporations have refined their ability to use intricate contracts to hide concessions, while members were often the last to know the details of the deals that define their lives. We are entering a bargaining climate where automation, the 'green transition,' and global competition are being used as threats to our job security and standards. We need a strategy that uses our full economic power and puts the corporation on the defensive.",
+      problem: [
+        "The issues our members are facing at the bargaining table are more complex than ever before. For years, corporations have refined their ability to use intricate contracts to hide concessions, while members were often the last to know the details of the deals that define their lives.",
+        "We are entering a bargaining climate where automation, the 'green transition,' and global competition are being used as threats to our job security and standards. We need a strategy that uses our full economic power and puts the corporation on the defensive."
+      ],
       commitments: [
         "Honor member-driven bargaining agendas by ensuring local unit priorities dictate the table strategy.",
         "Establish an Economic War Room staffed by labor economists and industry experts to counter corporate misinformation.",
@@ -57,14 +63,16 @@ export function PlatformSection() {
       id: "03",
       title: "Staff & Local Leader Development",
       icon: Users,
-      problem: "Our representatives are often outmatched not by talent, but by the modern digital tools, legal resources, and data analytics deployed by multi-national corporations. A lack of standardized, high-level training for stewards and servicing reps leads to inconsistent enforcement of our hard-won rights. We cannot win tomorrow's grievances with yesterday's training. We must build a culture where preparation is the baseline for every leader.",
+      problem: [
+        "Our representatives are often outmatched not by talent, but by the modern digital tools, legal resources, and data analytics deployed by multi-national corporations. A lack of standardized, high-level training for stewards and servicing reps leads to inconsistent enforcement of our hard-won rights.",
+        "We cannot win tomorrow's grievances with yesterday's training. We must build a culture where preparation is the baseline for every leader."
+      ],
       commitments: [
-        "Mandatory 'Member-Driven Bargaining Agenda' training for all international and local representatives to ensure member priorities lead every negotiation.",
+        "Mandatory 'Member-Driven Bargaining Agenda' training for all international and local representatives to ensure member priorities lead negotiations.",
         "Standardized 'Strike Authorization Transparency' protocols for stewards to keep the rank-and-file informed during industrial actions.",
         "Launch the 'UAW Leadership Institute'—a rigorous certification program for all servicing reps and local stewards.",
         "Implement a Universal Digital Grievance Tracking System allowing members to see the status, history, and notes of their case in real-time.",
-        "Expand specialized legal and safety support staff to provide 24/7 assistance for complex industrial hazards and legal challenges.",
-        "Institutionalize 'Shadowing Programs' where new stewards learn from veteran leaders on the shop floor before taking office."
+        "Expand specialized legal and safety support staff to provide 24/7 assistance for complex industrial hazards and legal challenges."
       ],
       memberMessage: "Every member deserves representation that is trained to the highest level. We will settle for nothing less."
     },
@@ -72,7 +80,10 @@ export function PlatformSection() {
       id: "04",
       title: "Reimagining National Political Action & CAP",
       icon: Landmark,
-      problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on fundamental member protections. We have been too quick to endorse and too slow to hold elected officials accountable. We must return to a model where we use our political weight to move the needle for all members, not just to gain access to the halls of power.",
+      problem: [
+        "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on fundamental member protections. We have been too quick to endorse and too slow to hold elected officials accountable.",
+        "We must return to a model where we use our political weight to move the needle for all members, not just to gain access to the halls of power."
+      ],
       commitments: [
         "Tie all V-CAP endorsements strictly to a 'Labor-First' scorecard focused on anti-tier, anti-scab, and card-check legislation.",
         "Grant local councils Veto Power over regional endorsements that conflict with local member priorities or candidate records.",
@@ -84,43 +95,55 @@ export function PlatformSection() {
     },
     {
       id: "05",
-      title: "Healthcare: Bargaining, Standards & the Issue Campaign",
+      title: "Healthcare: Bargaining & Standards",
       icon: Heart,
-      problem: "Healthcare is a fundamental human right, yet it is being used by corporations as a tool of coercion during negotiations. The 'healthcare cliff'—where rising premiums and shrinking networks roll back wage increases—is a deliberate corporate strategy. We must treat healthcare not just as a benefit to be defended, but as a national issue campaign that we lead for the entire working class.",
+      problem: [
+        "Healthcare is a fundamental human right, yet it is being used by corporations as a tool of coercion during negotiations. The 'healthcare cliff'—where rising premiums and shrinking networks roll back wage increases—is a deliberate corporate strategy.",
+        "We must treat healthcare not just as a benefit to be defended, but as a national issue campaign that we lead for the entire working class."
+      ],
       commitments: [
         "Create a National UAW Healthcare Trust Defense Fund to aggressively litigate and fight off network reductions and cost-shifts.",
         "Contractual guarantees for Healthcare Cost-Caps: Ensuring take-home pay never decreases due to premium or deductible hikes.",
-        "Mandatory mental health and substance abuse support parity in every multi-sector agreement, including onsite support where possible.",
+        "Mandatory mental health and substance abuse support parity in every multi-sector agreement.",
         "Establish a Retiree Healthcare Advocacy Board to protect VEBA and traditional plans from inflationary erosion."
       ],
       memberMessage: "Every member has a right to health and dignity. We will fight for it at the table and in the streets."
     },
     {
       id: "06",
-      title: "Internal Campaign Finance Reform & Union Integrity",
+      title: "Internal Campaign Finance & Union Integrity",
       icon: PieChart,
-      problem: "The move to Direct Elections was a victory for the members, but the 'incumbency advantage' remains a barrier to true democracy. When dues dollars are used to fund the public relations of sitting officers during election cycles, it creates an unlevel playing field. We need strict rules that separate the work of the union from the work of campaigning.",
+      problem: [
+        "The move to Direct Elections was a victory for the members, but the 'incumbency advantage' remains a barrier to true democracy. When dues dollars are used to fund the public relations of sitting officers during election cycles, it creates an unlevel playing field.",
+        "We need strict rules that separate the work of the union from the work of campaigning. Leadership that wins the trust of the members shouldn't be afraid to defend its record without using the members' money."
+      ],
       commitments: [
         "Strict separation of union communication assets from campaign activities during election periods.",
         "Commitment to a 30% reduction in non-essential administrative overhead at Solidarity House within 24 months.",
         "Redirection of saved administrative funds directly to 'Ground-War' organizing and local servicing budgets.",
         "Quarterly 'Dues Transparency Reports' mailed to every member's home, detailing exactly how every dollar is spent.",
         "Establish an independent Election Commission to oversee all international and regional votes with no ties to the IEB.",
-        "Restructure the Strike Fund to ensure benefit payments match 100% of a member's base take-home pay from day one."
+        "Restructure the Strike Fund to ensure benefit payments match 100% of a member's base take-home pay from day one.",
+        "Mandatory cooling-off period for former International Executive Board members before taking lobbying or consulting roles."
       ],
-      memberMessage: "Leadership that wins the trust of the members shouldn't be afraid to defend its record without using the members' money."
+      memberMessage: "Your dues money belongs to the fight, not to the campaign of the person currently holding the gavel."
     },
     {
       id: "07",
       title: "Retiree Dignity & Continued Voice",
       icon: HistoryIcon,
-      problem: "The giants whose shoulders we stand on are being sidelined. Solidarity is a lifelong bond, yet our retirees often feel disconnected from active leadership and vulnerable to pension erosion. As inflation rises, the fixed incomes of our veterans are being squeezed. We must honor the promises made to those who built this union.",
+      problem: [
+        "The giants whose shoulders we stand on are being sidelined. Solidarity is a lifelong bond, yet our retirees often feel disconnected from active leadership and vulnerable to pension erosion.",
+        "As inflation rises, the fixed incomes of our veterans are being squeezed. We must honor the promises made to those who built this union."
+      ],
       commitments: [
         "Negotiate Automatic COLA (Cost of Living Adjustments) for all retiree pensions in every future contract negotiation.",
         "Create a permanent, voting seat on the International Executive Board (IEB) for a Retiree Council Representative.",
         "Launch a National Retiree Mentorship program to connect veteran experience with new-hire organizing and steward training.",
-        "Protect and expand surviving spouse benefits to ensure no UAW family is left in poverty after a lifetime of service.",
-        "Constitutional protection of retiree chapters to ensure they have the budget and autonomy to organize locally."
+        "Protect and expand surviving spouse benefits to ensure no UAW family is left in poverty.",
+        "Constitutional protection of retiree chapters to ensure they have the budget and autonomy to organize locally.",
+        "Increase oversight of the Retiree Medical Benefits Trust to ensure full transparency for beneficiaries.",
+        "Establish a dedicated legal support fund to protect retiree benefits from corporate bankruptcy threats."
       ],
       memberMessage: "Retirees are not the past of this union; they are the conscience and the backbone. We will fight for those who fought for us."
     },
@@ -128,13 +151,17 @@ export function PlatformSection() {
       id: "08",
       title: "Organizing: Growing Our Power",
       icon: Network,
-      problem: "Falling union density is the single greatest threat to our collective bargaining power. Every non-union plant is a weapon the boss uses against us at the bargaining table. If we don't organize the new industries—especially the EV and battery sectors in the South—we will lose the leverage required to protect our existing standards.",
+      problem: [
+        "Falling union density is the single greatest threat to our collective bargaining power. Every non-union plant is a weapon the boss uses against us at the bargaining table.",
+        "If we don't organize the new industries—especially the EV and battery sectors—we will lose the leverage required to protect our existing standards. We will organize until we win."
+      ],
       commitments: [
-        "Authorize a $100 Million Strategic Organizing Fund specifically targeted at the non-union South and the burgeoning EV sector.",
+        "Authorize a $100 Million Strategic Organizing Fund specifically targeted at the non-union South and the EV sector.",
         "Deploy 'Tiger Teams'—elite, rapid-response organizing units of rank-and-file members—for new plant drives.",
-        "Implement a 'Sector-Wide Solidarity' model to organize the entire supply chain.",
+        "Implement a 'Sector-Wide Solidarity' model to organize the entire supply chain from parts to assembly.",
         "Leverage digital-first organizing tools and data analytics to reach workers in tech-manufacturing.",
-        "Commitment to 'Card Check' neutrality agreements in all future master contracts with multi-national employers."
+        "Commitment to 'Card Check' neutrality agreements in all future master contracts.",
+        "Establish a 'Right-to-Organize' Legal Strike Fund to support workers fired during organizing drives."
       ],
       memberMessage: "Every member we leave behind is a member the boss will use against us. We will organize until we win."
     }
@@ -236,10 +263,12 @@ export function PlatformSection() {
                         <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-campaign-gold flex items-center gap-2">
                           <span className="w-8 h-px bg-campaign-gold"></span> The Challenge
                         </h4>
-                        <div className="border-l-[6px] border-campaign-gold bg-campaign-gold/[0.03] p-6 md:p-10 rounded-r-2xl shadow-sm transition-colors hover:bg-campaign-gold/[0.06]">
-                          <p className="text-gray-800 text-sm md:text-base lg:text-lg leading-[1.7] tracking-tight">
-                            {p.problem}
-                          </p>
+                        <div className="border-l-[6px] border-campaign-gold bg-campaign-gold/[0.03] p-6 md:p-10 rounded-r-2xl shadow-sm transition-colors hover:bg-campaign-gold/[0.06] space-y-4">
+                          {p.problem.map((para, idx) => (
+                            <p key={idx} className="text-gray-800 text-sm md:text-base lg:text-lg leading-[1.7] tracking-tight">
+                              {para}
+                            </p>
+                          ))}
                         </div>
                       </div>
                       <div className="space-y-8">
