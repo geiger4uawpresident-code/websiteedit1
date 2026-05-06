@@ -51,7 +51,7 @@ export function PlatformSection() {
         "Standardized 'Solidarity Clauses' in all sector contracts to allow for common expiration dates and coordinated industrial action.",
         "Mandatory strike-readiness training for every local 12 months prior to contract expiration."
       ],
-      memberMessage: "The fights ahead are real and require a union that is steps ahead of the boss. We will lead by leading the way."
+      memberMessage: "The fights ahead are real. So is our commitment to fighting them on your terms — with your voice, your priorities, and your power leading the way."
     },
     {
       id: "03",
@@ -224,6 +224,7 @@ export function PlatformSection() {
                         </CardTitle>
                       </div>
                       <div className="pt-6 md:pt-8 border-t border-white/10 relative z-10">
+                        {/* No header text here as per client requirement */}
                         <p className="text-base md:text-lg lg:text-xl italic font-medium leading-relaxed text-white/90">
                           "{p.memberMessage}"
                         </p>
