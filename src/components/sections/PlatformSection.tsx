@@ -277,7 +277,7 @@ export function PlatformSection() {
                         </h4>
                         <ul className="grid gap-6 md:gap-8">
                           {p.commitments.map((commitment, index) => (
-                            <li 
+                            <li
                               key={`${p.id}-commitment-${index}`}
                               className="flex gap-5 p-4 -mx-4 rounded-2xl hover:bg-campaign-tan/10 transition-all duration-300 items-start group border-b border-gray-100/50 last:border-0 last:pb-0"
                             >
