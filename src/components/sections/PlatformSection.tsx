@@ -28,7 +28,7 @@ export function PlatformSection() {
       id: "01",
       title: "Clean Governance & Institutional Reform",
       icon: Shield,
-      problem: "The Promise Was Reform. For decades, a 'club culture' at the top of the UAW allowed bureaucracy and opaque financial reporting to erode the fundamental trust between leadership and the shop floor. While we are transitioning out of a period of federal oversight, the risk of backsliding into old habits remains high. Members were treated as spectators rather than owners. To build a powerful union, we must first get our own house under control and ensure the members are the ultimate monitor.",
+      problem: "The Independent Monitor found: an ongoing culture of fear, retaliation, manipulation of compliance, and weakened financial oversight. This was not just about bad individuals — it was a system of unaccountable power that operated without a budget, without transparency, and without consequence. Members voted for reform. We have an obligation to deliver it. The union is in financial peril and we have to get our house under control.",
       commitments: [
         "Implement real-time forensic auditing of all international and regional expenditures accessible via a secure member portal.",
         "Establish an independent Member Oversight Committee with the constitutional power to subpoena financial records and report directly to the membership.",
@@ -71,7 +71,7 @@ export function PlatformSection() {
       id: "04",
       title: "Reimagining National Political Action & CAP",
       icon: Landmark,
-      problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on fundamental worker protections. We have been too quick to endorse and too slow to hold elected officials accountable. We must return to a model where we use our political weight to move the needle for all workers, not just to gain access to the halls of power.",
+      problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on fundamental worker protections. We have been too quick to endorse and too slow to hold elected officials accountability. We must return to a model where we use our political weight to move the needle for all workers, not just to gain access to the halls of power.",
       commitments: [
         "Tie all V-CAP endorsements strictly to a 'Labor-First' scorecard focused on anti-tier, anti-scab, and card-check legislation.",
         "Grant local councils Veto Power over regional endorsements that conflict with local member priorities or candidate records.",
