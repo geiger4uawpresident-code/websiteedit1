@@ -1,21 +1,11 @@
-/* Cleaned up App.css */
-html {
-  scroll-behavior: smooth;
-}
+/* Cleaned up App.css - redundant smooth scroll removed (managed in index.css) */
 body {
   overflow-x: hidden;
 }
-/* Custom scrollbar for campaign feel */
-::-webkit-scrollbar {
-  width: 10px;
+/* Custom transitions for campaign theme elements */
+.campaign-card-hover {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: #C5A059;
-  border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #a8884c;
+.campaign-card-hover:hover {
+  transform: translateY(-4px);
 }

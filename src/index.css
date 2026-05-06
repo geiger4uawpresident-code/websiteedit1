@@ -30,8 +30,8 @@
   }
   html {
     scroll-behavior: smooth;
-    /* Aligns section headers below the sticky navbar */
-    scroll-padding-top: 90px;
+    /* Aligns section headers with buffer for the sticky navbar */
+    scroll-padding-top: 100px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

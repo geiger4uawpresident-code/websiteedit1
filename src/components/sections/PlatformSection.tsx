@@ -76,7 +76,7 @@ export function PlatformSection() {
         "Tie all V-CAP endorsements strictly to a 'Labor-First' scorecard focused on anti-tier, anti-scab, and card-check legislation.",
         "Grant local councils Veto Power over regional endorsements that conflict with local member priorities or candidate records.",
         "Aggressive, member-led lobbying for the 'Worker Freedom Act' to end forced captive audience meetings and 'right-to-work' laws.",
-        "Establish a 'UAW Political Fellowships' program to train rank-and-file members to run for local and state offices.",
+        "Establish a 'UAW Political Fellowships' program to train rank-and-fold members to run for local and state offices.",
         "Direct member-led development of the biennial UAW National Legislative Agenda through regional summits."
       ],
       memberMessage: "It's time we stop being a junior partner to political parties and start being a lead negotiator at the bargaining table."
@@ -264,7 +264,7 @@ export function PlatformSection() {
         >
           <Quote className="mx-auto text-campaign-gold mb-6" size={48} />
           <h3 className="text-2xl md:text-4xl font-black italic mb-6 max-w-4xl mx-auto leading-tight">
-            "We are not just electing a president. We are deciding who we are as a union and what we will demand for our future."
+            "We are not just electing a president. We are deciding who we are as a movement!"
           </h3>
           <p className="text-campaign-gold font-black uppercase tracking-[0.3em] text-sm md:text-base">Tricia Geiger</p>
         </motion.div>
