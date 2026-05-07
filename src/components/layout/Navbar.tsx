@@ -52,7 +52,7 @@ export function Navbar() {
               className="group-hover/logo:scale-110 group-hover/logo:rotate-3 transition-all duration-500 shadow-md"
             />
             <span className={cn(
-              "font-display font-black text-lg tracking-tight uppercase transition-colors duration-300 hidden sm:block",
+              "font-display font-black text-lg tracking-tight uppercase transition-colors duration-500 hidden sm:block",
               isNavActive ? "text-campaign-black" : "text-white"
             )}>
               Tricia Geiger <span className="text-campaign-gold">2026</span>
@@ -77,7 +77,7 @@ export function Navbar() {
               <a href={DONATE_URL} target="_blank" rel="noopener noreferrer">Donate</a>
             </Button>
           </div>
-          {/* Mobile Toggle - Z-70 ensures it stays above overlay */}
+          {/* Mobile Toggle - Z-80 ensures it stays above overlay */}
           <button
             className={cn(
               "md:hidden p-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-campaign-gold transition-all active:scale-90 relative z-[80]",
@@ -91,7 +91,7 @@ export function Navbar() {
           </button>
         </div>
       </nav>
-      {/* Mobile Menu Backdrop & Overlay - Z-65 stays below the Nav container (Z-70) */}
+      {/* Mobile Menu Backdrop & Overlay - Z-65 stays below the Nav container (Z-70) and Toggle (Z-80) */}
       <div
         className={cn(
           "md:hidden fixed inset-0 z-[65] bg-white transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] transform overflow-hidden",

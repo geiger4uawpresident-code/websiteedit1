@@ -55,9 +55,9 @@ export function HeroSection() {
               Prepared. Democratic. Accountable.
             </span>
           </div>
-          <h1 className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-8xl font-display font-black text-white uppercase tracking-tight text-balance leading-[0.9] sm:leading-[0.85]">
-            <span className="block mb-1">Tricia Geiger</span>
-            <span className="text-campaign-gold italic text-[1.8rem] sm:text-[0.65em] block sm:inline-block mt-0 tracking-normal normal-case font-medium">
+          <h1 className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-8xl font-display font-black text-white uppercase tracking-tighter text-balance leading-[0.85]">
+            <span className="block">Tricia Geiger</span>
+            <span className="text-campaign-gold italic text-[1.6rem] sm:text-[0.6em] block sm:inline-block mt-0 tracking-[0.02em] normal-case font-medium">
               for UAW President
             </span>
           </h1>

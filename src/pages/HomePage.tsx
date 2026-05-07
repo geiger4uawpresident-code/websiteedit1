@@ -30,8 +30,8 @@ export function HomePage() {
   return (
     <div className="min-h-screen bg-white selection:bg-campaign-gold selection:text-white antialiased overflow-x-hidden">
       {/* High-visibility Skip Link for keyboard navigation accessibility */}
-      <a
-        href="#main-content"
+      <a 
+        href="#main-content" 
         className="sr-only focus:not-sr-only focus:fixed focus:top-6 focus:left-6 z-[100] bg-campaign-black text-white px-8 py-4 rounded-xl font-black shadow-[0_20px_50px_rgba(0,0,0,0.3)] ring-4 ring-campaign-gold transition-all"
       >
         Skip to main content
