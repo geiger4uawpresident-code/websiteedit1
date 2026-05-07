@@ -39,19 +39,19 @@ export function PlatformSection() {
                   Ready to Lead. Ready to Deliver.
                 </h3>
                 <p className="text-gray-700 text-base md:text-lg mb-10 leading-relaxed max-w-xl">
-                  Our platform is built on three unbreakable pillars: 
-                  <span className="font-bold text-campaign-black"> Prepared, Democratic, and Accountable.</span> 
-                  Explore the full 8-point strategic plan for UAW reform and industrial power.
+                  Our platform is built on three unbreakable pillars:
+                  <span className="font-bold text-campaign-black"> Prepared, Democratic, and Accountable.</span>
+                  Explore the full 8-point strategic plan for UAW reform and bargaining power.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-                  <Button 
-                    asChild 
-                    size="lg" 
+                  <Button
+                    asChild
+                    size="lg"
                     className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-black h-16 px-10 text-lg shadow-xl shadow-campaign-gold/20 transition-all active:scale-95 group/btn"
                   >
-                    <a 
-                      href={PLATFORM_DOC_URL} 
-                      target="_blank" 
+                    <a
+                      href={PLATFORM_DOC_URL}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-3"
                     >
