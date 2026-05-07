@@ -55,14 +55,16 @@ export function HeroSection() {
               Prepared. Democratic. Accountable.
             </span>
           </div>
-          <h1 className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-8xl font-display font-black text-white uppercase tracking-tighter text-balance leading-[0.85]">
-            <span className="block">Tricia Geiger</span>
-            <span className="text-campaign-gold italic text-[1.6rem] sm:text-[0.6em] block sm:inline-block mt-0 tracking-[0.02em] normal-case font-medium">
+          <h1 className="flex flex-col items-center font-display font-black text-white uppercase text-balance leading-[0.85]">
+            <span className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-8xl tracking-tighter block">
+              Tricia Geiger
+            </span>
+            <span className="text-campaign-gold italic text-[1.1rem] sm:text-[1.8rem] md:text-[2.2rem] lg:text-[2.8rem] block mt-2 sm:mt-4 tracking-[0.15em] sm:tracking-[0.22em] normal-case font-medium whitespace-nowrap opacity-90 transition-all">
               for UAW President
             </span>
           </h1>
           <p className="text-base sm:text-lg md:text-2xl text-campaign-tan max-w-3xl mx-auto font-medium leading-relaxed px-4 opacity-95 tracking-tight text-balance">
-            A <span className="relative inline-block border-b-[3px] sm:border-b-[4px] border-campaign-red/90 pb-0 sm:pb-0.5 text-white font-bold px-0.5">member-first</span> movement dedicated to restoring the power, dignity, and future of every UAW member. One union. One movement.
+            A <span className="relative inline-block border-b-[4px] sm:border-b-[5px] border-campaign-red/90 pb-0.5 sm:pb-1 text-white font-bold px-1 transition-all">member-first</span> movement dedicated to restoring the power, dignity, and future of every UAW member. One union. One movement.
           </p>
         </motion.div>
         <motion.div
@@ -81,7 +83,7 @@ export function HeroSection() {
         >
           <div className="flex flex-col sm:flex-row gap-4 mt-2 w-full sm:w-auto items-center justify-center">
             <Button asChild size="lg" className="bg-campaign-gold hover:opacity-95 text-white font-black h-14 px-10 w-full sm:w-64 transition-all active:scale-95 shadow-xl shadow-campaign-gold/20 text-base md:text-lg">
-              <a href="#involve">Join the Movement</a>
+              <a href="#involve">Sign Me Up</a>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-campaign-tan/40 text-white hover:bg-white/10 hover:border-campaign-gold hover:text-white h-14 px-10 w-full sm:w-64 transition-all active:scale-95 backdrop-blur-sm bg-white/5 text-base md:text-lg">
               <a href="#platform">View the Platform</a>

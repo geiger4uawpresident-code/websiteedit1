@@ -20,7 +20,7 @@ export function PlatformSection() {
               The 2026 Strategic Platform
             </h2>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-              A comprehensive Member-First blueprint designed to restore power,
+              A comprehensive Member-First blueprint designed to restore power, 
               transparency, and results to the UAW membership.
             </p>
           </motion.div>
@@ -39,9 +39,9 @@ export function PlatformSection() {
                   Ready to Lead. Ready to Deliver.
                 </h3>
                 <p className="text-gray-700 text-base md:text-lg mb-10 leading-relaxed max-w-xl">
-                  Our platform is built on three unbreakable pillars:
-                  <span className="font-bold text-campaign-black"> Prepared, Democratic, and Accountable.</span>
-                  Explore the full 8-point strategic plan for UAW reform and bargaining power.
+                  Our platform is built on three unbreakable pillars: 
+                  <span className="font-bold text-campaign-black"> Prepared, Democratic, and Accountable.</span> 
+                  Explore the full 8-point strategic plan for UAW reform and <span className="text-campaign-black font-bold">bargaining power</span>.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
                   <Button
@@ -49,15 +49,15 @@ export function PlatformSection() {
                     size="lg"
                     className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-black h-16 px-10 text-lg shadow-xl shadow-campaign-gold/20 transition-all active:scale-95 group/btn"
                   >
-                    <a
-                      href={PLATFORM_DOC_URL}
-                      target="_blank"
+                    <a 
+                      href={PLATFORM_DOC_URL} 
+                      target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center gap-3"
                     >
-                      <FileText className="w-5 h-5" />
+                      <FileText className="w-5 h-5 transition-transform group-hover/btn:-translate-y-0.5" />
                       View Full Strategic Platform
-                      <ExternalLink className="w-4 h-4 opacity-50 group-hover/btn:opacity-100 transition-opacity" />
+                      <ExternalLink className="w-4 h-4 opacity-50 group-hover/btn:opacity-100 group-hover/btn:translate-x-0.5 transition-all" />
                     </a>
                   </Button>
                 </div>
