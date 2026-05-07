@@ -20,7 +20,7 @@ export function PlatformSection() {
               The 2026 Strategic Platform
             </h2>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-              A comprehensive Member-First blueprint designed to restore power, 
+              A comprehensive Member-First blueprint designed to restore power,
               transparency, and results to the UAW membership.
             </p>
           </motion.div>
@@ -30,34 +30,34 @@ export function PlatformSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Card className="bg-white border-2 border-campaign-gold/20 shadow-2xl rounded-[2rem] overflow-hidden">
+            <Card className="bg-white border-2 border-campaign-gold/20 shadow-2xl rounded-[2rem] overflow-hidden group/card transition-all hover:border-campaign-gold/40">
               <CardContent className="p-8 md:p-16 flex flex-col items-center text-center">
-                <div className="w-20 h-20 bg-campaign-gold/10 rounded-2xl flex items-center justify-center text-campaign-gold mb-8">
+                <div className="w-20 h-20 bg-campaign-gold/10 rounded-2xl flex items-center justify-center text-campaign-gold mb-8 transition-transform group-hover/card:scale-110">
                   <ShieldCheck size={48} strokeWidth={1.5} />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-black text-campaign-black uppercase mb-6">
                   Ready to Lead. Ready to Deliver.
                 </h3>
                 <p className="text-gray-700 text-base md:text-lg mb-10 leading-relaxed max-w-xl">
-                  Our platform is built on three unbreakable pillars: 
-                  <span className="font-bold text-campaign-black"> Prepared, Democratic, and Accountable.</span> 
+                  Our platform is built on three unbreakable pillars:
+                  <span className="font-bold text-campaign-black"> Prepared, Democratic, and Accountable.</span>
                   Explore the full 8-point strategic plan for UAW reform and industrial power.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-                  <Button 
-                    asChild 
-                    size="lg" 
-                    className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-black h-16 px-10 text-lg shadow-xl shadow-campaign-gold/20 transition-all active:scale-95 group"
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-black h-16 px-10 text-lg shadow-xl shadow-campaign-gold/20 transition-all active:scale-95 group/btn"
                   >
-                    <a 
-                      href={PLATFORM_DOC_URL} 
-                      target="_blank" 
+                    <a
+                      href={PLATFORM_DOC_URL}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-3"
                     >
                       <FileText className="w-5 h-5" />
                       View Full Strategic Platform
-                      <ExternalLink className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" />
+                      <ExternalLink className="w-4 h-4 opacity-50 group-hover/btn:opacity-100 transition-opacity" />
                     </a>
                   </Button>
                 </div>

@@ -11,16 +11,16 @@ import { Toaster } from '@/components/ui/sonner';
 /**
  * HomePage: Final Production Build for Tricia Geiger's 2026 UAW Presidential Campaign.
  * 
- * CORE STRATEGY:
- * - SEO: Maintain high-authority meta title for union keywords.
- * - UX: Sticky navigation and high-visibility CTAs for donations/sign-ups.
- * - ACCESSIBILITY: WCAG 2.1 compliance with skip links and focus states.
+ * FINAL AUDIT STATUS:
+ * - SEO: Meta title verified.
+ * - UX: Section anchors and scroll-to-top verified.
+ * - Accessibility: Skip-links and tab index verified.
  */
 export function HomePage() {
   useEffect(() => {
     // Official campaign title for SEO and browser tab identity
     document.title = "Tricia Geiger for UAW President 2026 | Prepared. Democratic. Accountable.";
-    // Reset scroll position on entry for a fresh experience
+    // Ensure fresh scroll state on entry
     if (window.history.scrollRestoration) {
       window.history.scrollRestoration = 'manual';
     }
@@ -42,7 +42,7 @@ export function HomePage() {
         <HeroSection />
         {/* Biographical Narrative & Experience */}
         <BioSection />
-        {/* 8-Pillar Strategic Reform Platform (Verbatim Directive) */}
+        {/* 8-Pillar Strategic Reform Platform Gateway */}
         <PlatformSection />
         {/* Dual Sign-up Funnels (Updates & Amplifiers) */}
         <InvolveSection />
@@ -53,7 +53,7 @@ export function HomePage() {
       </main>
       {/* Footer with Contact, Socials, and Donation Links */}
       <Footer />
-      {/* Global Campaign Notifications (Sonner) - Branded tan/black theme */}
+      {/* Global Campaign Notifications (Sonner) - Branded theme */}
       <Toaster
         richColors
         closeButton
