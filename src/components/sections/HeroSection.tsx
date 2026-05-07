@@ -70,7 +70,7 @@ export function HeroSection() {
           className="max-w-4xl mx-auto w-full px-2 mt-2"
         >
           <VideoPlayer
-            url="https://www.youtube.com/embed/sAoPSp2HQGo?rel=0"
+            url="https://www.youtube.com/embed/nr6qFuFN8Ms?rel=0"
             title="Tricia Geiger Campaign Launch Speech"
             className="shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] border-campaign-gold/10"
           />
