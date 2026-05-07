@@ -10,27 +10,27 @@ export function HeroSection() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3
+        staggerChildren: 0.15,
+        delayChildren: 0.2
       }
     }
   };
   const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 0.8,
-        ease: "easeOut" as const
+        ease: [0.22, 1, 0.36, 1]
       }
     }
   };
   return (
-    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center pt-28 pb-12 overflow-hidden bg-campaign-black">
-      {/* Background elements */}
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541888941255-2574b1752175?auto=format&fit=crop&q=80')] opacity-20 bg-cover bg-center" />
-      <div className="absolute inset-0 bg-gradient-to-b from-campaign-black/95 via-campaign-black/70 to-campaign-black" />
+    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center pt-28 pb-16 overflow-hidden bg-campaign-black">
+      {/* Background with optimized opacity for contrast */}
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541888941255-2574b1752175?auto=format&fit=crop&q=80')] opacity-[0.15] bg-cover bg-center" />
+      <div className="absolute inset-0 bg-gradient-to-b from-campaign-black/95 via-campaign-black/80 to-campaign-black" />
       <motion.div
         className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 md:space-y-12"
         variants={containerVariants}
@@ -39,63 +39,65 @@ export function HeroSection() {
       >
         <motion.div variants={itemVariants} className="space-y-4 md:space-y-6">
           <motion.div
-            className="flex justify-center mb-4 md:mb-8"
-            initial={{ scale: 0, rotate: -180 }}
+            className="flex justify-center mb-4 md:mb-6"
+            initial={{ scale: 0, rotate: -10 }}
             animate={{ scale: 1, rotate: 0 }}
-            transition={{ type: "spring", stiffness: 260, damping: 20 }}
+            transition={{ type: "spring", stiffness: 200, damping: 15 }}
           >
             <CampaignLogo
               variant="black-on-gold"
               size="lg"
-              className="shadow-[0_0_50px_rgba(197,160,89,0.4)] scale-110 md:scale-125"
+              className="shadow-[0_0_50px_rgba(197,160,89,0.3)] scale-110 md:scale-125"
             />
           </motion.div>
-          <span className="inline-block px-6 py-2 rounded-full bg-campaign-gold text-white text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] shadow-lg shadow-campaign-gold/20">
-            Prepared. Democratic. Accountable.
-          </span>
-          <h1 className="text-[2.5rem] sm:text-6xl md:text-7xl lg:text-8xl font-display font-black text-white uppercase tracking-tight text-balance leading-[0.95] sm:leading-[0.9]">
-            <span className="block mb-2">Tricia Geiger</span>
-            <span className="text-campaign-gold italic text-[2rem] sm:text-[0.68em] block sm:inline-block mt-1 sm:mt-0 tracking-normal normal-case">
+          <div className="flex justify-center">
+            <span className="inline-block px-5 py-1.5 rounded-full bg-campaign-gold text-white text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] shadow-lg shadow-campaign-gold/10 border border-white/10">
+              Prepared. Democratic. Accountable.
+            </span>
+          </div>
+          <h1 className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-8xl font-display font-black text-white uppercase tracking-tight text-balance leading-[0.9] sm:leading-[0.85]">
+            <span className="block mb-1">Tricia Geiger</span>
+            <span className="text-campaign-gold italic text-[1.8rem] sm:text-[0.65em] block sm:inline-block mt-0 tracking-normal normal-case font-medium">
               for UAW President
             </span>
           </h1>
-          <p className="text-base sm:text-lg md:text-2xl text-campaign-tan max-w-3xl mx-auto font-medium drop-shadow-sm leading-relaxed px-4 opacity-95 tracking-tight text-balance">
-            A <span className="relative inline-block border-b-[3px] sm:border-b-[5px] border-campaign-red/80 pb-0.5 sm:pb-1 text-white font-bold">member-first</span> movement dedicated to restoring the power, dignity, and future of every UAW member. One union. One movement.
+          <p className="text-base sm:text-lg md:text-2xl text-campaign-tan max-w-3xl mx-auto font-medium leading-relaxed px-4 opacity-95 tracking-tight text-balance">
+            A <span className="relative inline-block border-b-[3px] sm:border-b-[4px] border-campaign-red/90 pb-0 sm:pb-0.5 text-white font-bold px-0.5">member-first</span> movement dedicated to restoring the power, dignity, and future of every UAW member. One union. One movement.
           </p>
         </motion.div>
         <motion.div
           variants={itemVariants}
-          className="max-w-4xl mx-auto w-full px-2 mt-4 md:mt-8"
+          className="max-w-4xl mx-auto w-full px-2 mt-2"
         >
           <VideoPlayer
             url="https://www.youtube.com/embed/sAoPSp2HQGo?rel=0"
             title="Tricia Geiger Campaign Launch Speech"
-            className="shadow-[0_20px_60px_-15px_rgba(0,0,0,0.7)] border-campaign-gold/20"
+            className="shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] border-campaign-gold/10"
           />
         </motion.div>
         <motion.div
           variants={itemVariants}
           className="flex flex-col items-center gap-6"
         >
-          <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto items-center justify-center">
-            <Button asChild size="lg" className="bg-campaign-gold hover:opacity-95 text-white font-bold h-14 px-10 w-full sm:w-64 transition-all active:scale-95 shadow-xl shadow-campaign-gold/20 backdrop-blur-sm text-base md:text-lg">
-              <a href="#involve">Sign Me Up</a>
+          <div className="flex flex-col sm:flex-row gap-4 mt-2 w-full sm:w-auto items-center justify-center">
+            <Button asChild size="lg" className="bg-campaign-gold hover:opacity-95 text-white font-black h-14 px-10 w-full sm:w-64 transition-all active:scale-95 shadow-xl shadow-campaign-gold/20 text-base md:text-lg">
+              <a href="#involve">Join the Movement</a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-campaign-tan/60 text-white hover:bg-white/15 hover:border-campaign-gold hover:text-white h-14 px-10 w-full sm:w-64 transition-all active:scale-95 backdrop-blur-md bg-white/5 text-base md:text-lg">
-              <a href="#platform">Read the Platform</a>
+            <Button asChild variant="outline" size="lg" className="border-campaign-tan/40 text-white hover:bg-white/10 hover:border-campaign-gold hover:text-white h-14 px-10 w-full sm:w-64 transition-all active:scale-95 backdrop-blur-sm bg-white/5 text-base md:text-lg">
+              <a href="#platform">View the Platform</a>
             </Button>
           </div>
           <motion.a
             href="#about"
-            className="transition-all mt-6 md:mt-12 hover:scale-110 active:scale-90 hidden sm:block"
+            className="transition-all mt-6 md:mt-8 hover:scale-110 active:scale-90 hidden sm:block"
             animate={{
-              y: [0, 8, 0],
+              y: [0, 10, 0],
               color: ["#D4C4A8", "#C5A059", "#D4C4A8"]
             }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
             aria-label="Scroll to about section"
           >
-            <ChevronDown size={32} />
+            <ChevronDown size={36} strokeWidth={2.5} />
           </motion.a>
         </motion.div>
       </motion.div>

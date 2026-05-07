@@ -77,11 +77,11 @@ export function Navbar() {
               <a href={DONATE_URL} target="_blank" rel="noopener noreferrer">Donate</a>
             </Button>
           </div>
-          {/* Mobile Toggle */}
+          {/* Mobile Toggle - Z-70 ensures it stays above overlay */}
           <button
             className={cn(
-              "md:hidden p-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-campaign-gold transition-all active:scale-90",
-              isNavActive ? "bg-gray-100 text-campaign-black" : "bg-white/10 text-white"
+              "md:hidden p-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-campaign-gold transition-all active:scale-90 relative z-[80]",
+              isNavActive || isMobileMenuOpen ? "bg-gray-100 text-campaign-black" : "bg-white/10 text-white"
             )}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-expanded={isMobileMenuOpen}
@@ -91,14 +91,14 @@ export function Navbar() {
           </button>
         </div>
       </nav>
-      {/* Mobile Menu Backdrop & Overlay */}
+      {/* Mobile Menu Backdrop & Overlay - Z-65 stays below the Nav container (Z-70) */}
       <div
         className={cn(
           "md:hidden fixed inset-0 z-[65] bg-white transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] transform overflow-hidden",
           isMobileMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
         )}
       >
-        <div className="flex flex-col h-full pt-24 px-6 pb-12 overflow-y-auto">
+        <div className="flex flex-col h-full pt-28 px-6 pb-12 overflow-y-auto">
           <div className="flex flex-col space-y-1">
             {navLinks.map((link, idx) => (
               <a
@@ -130,13 +130,6 @@ export function Navbar() {
           </div>
         </div>
       </div>
-      {/* Visual Blur Backdrop for mobile menu open state */}
-      {isMobileMenuOpen && (
-        <div
-          className="fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm md:hidden transition-opacity duration-300"
-          onClick={() => setIsMobileMenuOpen(false)}
-        />
-      )}
     </>
   );
 }
