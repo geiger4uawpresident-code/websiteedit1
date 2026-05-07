@@ -26,7 +26,7 @@
     --radius: 0.75rem;
   }
   * {
-    @apply border-border outline-none;
+    @apply border-border;
   }
   html {
     scroll-behavior: smooth;
@@ -41,7 +41,7 @@
   }
   /* Enhanced accessibility: prominent focus-visible ring with larger offset */
   :focus-visible {
-    @apply ring-2 ring-campaign-gold ring-offset-4 ring-offset-background transition-shadow duration-200;
+    @apply outline-none ring-2 ring-campaign-gold ring-offset-4 ring-offset-background transition-shadow duration-200;
   }
   /* Premium Branded Scrollbar */
   ::-webkit-scrollbar {

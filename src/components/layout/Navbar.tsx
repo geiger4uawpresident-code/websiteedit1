@@ -34,7 +34,7 @@ export function Navbar() {
     <>
       <nav
         className={cn(
-          "fixed top-0 left-0 right-0 z-[60] transition-all duration-500 ease-in-out",
+          "fixed top-0 left-0 right-0 z-[70] transition-all duration-500 ease-in-out",
           isNavActive
             ? "bg-white/95 backdrop-blur-lg shadow-xl border-b border-gray-100 py-3"
             : "bg-transparent py-6"
