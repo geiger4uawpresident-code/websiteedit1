@@ -55,9 +55,9 @@ export function HomePage() {
       {/* Footer with Contact, Socials, and Donation Links */}
       <Footer />
       {/* Global Campaign Notifications (Sonner) - Branded theme */}
-      <Toaster
-        richColors
-        closeButton
+      <Toaster 
+        richColors 
+        closeButton 
         position="bottom-center"
         toastOptions={{
           style: {
