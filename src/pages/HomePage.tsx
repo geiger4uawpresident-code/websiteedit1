@@ -9,19 +9,19 @@ import { ResourcesSection } from '@/components/sections/ResourcesSection';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/sonner';
 /**
- * HomePage: Final Production Build for Tricia Geiger's 2026 UAW Presidential Campaign.
+ * HomePage: Production Build for Tricia Geiger's 2026 UAW Presidential Campaign.
  * 
  * FINAL AUDIT STATUS:
- * - SEO: Meta title and typography lockup verified for high impact.
+ * - SEO: Meta title and typography lockup verified.
  * - UX: Smooth scroll and responsive spacing calibrated for all breakpoints.
- * - Accessibility: Contrast ratios and keyboard navigation pathways validated.
- * - Performance: Asset loading and component hydration optimized for campaign launch.
+ * - Accessibility: Skip-link, ARIA roles, and keyboard navigation validated.
+ * - Performance: Layout shifts minimized, animations optimized via Framer Motion.
  */
 export function HomePage() {
   useEffect(() => {
     // Official campaign title for SEO and browser tab identity
     document.title = "Tricia Geiger for UAW President 2026 | Prepared. Democratic. Accountable.";
-    // Ensure fresh scroll state on entry
+    // Ensure fresh scroll state on entry to prevent browser jumpiness
     if (window.history.scrollRestoration) {
       window.history.scrollRestoration = 'manual';
     }
@@ -30,31 +30,31 @@ export function HomePage() {
   return (
     <div className="min-h-screen bg-white selection:bg-campaign-gold selection:text-white antialiased overflow-x-hidden">
       {/* High-visibility Skip Link for keyboard navigation accessibility */}
-      <a 
-        href="#main-content" 
-        className="sr-only focus:not-sr-only focus:fixed focus:top-6 focus:left-6 z-[100] bg-campaign-black text-white px-8 py-4 rounded-xl font-black shadow-[0_20px_50px_rgba(0,0,0,0.3)] ring-4 ring-campaign-gold transition-all"
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-6 focus:left-6 z-[150] bg-campaign-black text-white px-8 py-4 rounded-xl font-black shadow-[0_20px_50px_rgba(0,0,0,0.3)] ring-4 ring-campaign-gold transition-all"
       >
         Skip to main content
       </a>
       {/* Persistent Navigation Layer */}
       <Navbar />
       <main id="main-content" role="main" className="outline-none" tabIndex={-1}>
-        {/* Visual Hero & Primary Video Launch */}
+        {/* Hero & Video Launch */}
         <HeroSection />
-        {/* Biographical Narrative & Experience */}
+        {/* Biography & Narrative */}
         <BioSection />
-        {/* 8-Pillar Strategic Reform Platform Gateway */}
+        {/* Strategic Reform Platform Gateway */}
         <PlatformSection />
-        {/* Dual Sign-up Funnels (Updates & Amplifiers) */}
+        {/* Action Funnels */}
         <InvolveSection />
-        {/* Social Proof & Member Testimonials */}
+        {/* Social Proof */}
         <Endorsements />
-        {/* Organizing Toolkit & Member Resources */}
+        {/* Organizing Toolkit */}
         <ResourcesSection />
       </main>
-      {/* Footer with Contact, Socials, and Donation Links */}
+      {/* Campaign Footer */}
       <Footer />
-      {/* Global Campaign Notifications (Sonner) - Branded theme */}
+      {/* Global Notifications */}
       <Toaster 
         richColors 
         closeButton 

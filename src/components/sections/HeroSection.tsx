@@ -55,17 +55,17 @@ export function HeroSection() {
               Prepared. Democratic. Accountable.
             </span>
           </div>
-          <h1 className="flex flex-col items-center font-display font-black text-white uppercase text-balance leading-[0.8]">
+          <h1 className="flex flex-col items-center font-display font-black text-white uppercase text-balance leading-[0.9]">
             <span className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-8xl tracking-tighter block">
               Tricia Geiger
             </span>
-            {/* 
+            {/*
               Precision Typography Lockup:
-              - Removed italics and mt-2/mt-4 gaps.
-              - Switched to font-black and uppercase.
+              - Adjusted leading to 0.9 for descender safety (the 'g').
+              - Added mt-[-0.05em] for tight visual lockup.
               - Calibrated tracking and font-size to be slightly wider than the name above.
             */}
-            <span className="text-campaign-gold text-[1.15rem] sm:text-[1.85rem] md:text-[2.35rem] lg:text-[2.9rem] block tracking-[0.18em] sm:tracking-[0.24em] font-black uppercase opacity-95 transition-all whitespace-nowrap">
+            <span className="text-campaign-gold text-[1.15rem] sm:text-[1.85rem] md:text-[2.35rem] lg:text-[2.9rem] block tracking-[0.22em] sm:tracking-[0.28em] font-black uppercase opacity-95 transition-all whitespace-nowrap mt-[-0.05em]">
               for UAW President
             </span>
           </h1>

@@ -34,7 +34,7 @@ export function Navbar() {
     <>
       <nav
         className={cn(
-          "fixed top-0 left-0 right-0 z-[70] transition-all duration-300 ease-out",
+          "fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ease-out",
           isNavActive
             ? "bg-white/95 backdrop-blur-lg shadow-xl border-b border-gray-100 py-3"
             : "bg-transparent py-6"
@@ -66,7 +66,7 @@ export function Navbar() {
                 href={link.href}
                 className={cn(
                   "text-xs font-bold uppercase tracking-widest hover:text-campaign-gold transition-all relative group py-2",
-                  isNavActive ? "text-campaign-black" : "text-white"
+                  isNavActive ? "text-campaign-black" : "text-white hover:text-campaign-gold"
                 )}
               >
                 {link.name}
@@ -80,7 +80,7 @@ export function Navbar() {
           {/* Mobile Toggle */}
           <button
             className={cn(
-              "md:hidden p-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-campaign-gold transition-all active:scale-90 relative z-[80]",
+              "md:hidden p-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-campaign-gold transition-all active:scale-90 relative z-[120]",
               isNavActive || isMobileMenuOpen ? "bg-gray-100 text-campaign-black" : "bg-white/10 text-white"
             )}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -94,7 +94,7 @@ export function Navbar() {
       {/* Mobile Menu Backdrop & Overlay */}
       <div
         className={cn(
-          "md:hidden fixed inset-0 z-[65] bg-white transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] transform overflow-hidden",
+          "md:hidden fixed inset-0 z-[90] bg-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] transform overflow-hidden",
           isMobileMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
         )}
       >
