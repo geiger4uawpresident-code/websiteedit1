@@ -60,7 +60,7 @@ export function HeroSection() {
             </span>
           </h1>
           <p className="text-base sm:text-lg md:text-2xl text-campaign-tan max-w-3xl mx-auto font-medium drop-shadow-sm leading-relaxed px-4 opacity-95 tracking-tight text-balance">
-            One Union. One Movement. Building a transparent and <span className="relative inline-block border-b-[3px] sm:border-b-[5px] border-campaign-red/80 pb-0.5 sm:pb-1 text-white font-bold mx-1">accountable</span> future for every member.
+            A <span className="relative inline-block border-b-[3px] sm:border-b-[5px] border-campaign-red/80 pb-0.5 sm:pb-1 text-white font-bold mx-1">member-first</span> movement dedicated to restoring the power, dignity, and future of every UAW member. One union. One movement.
           </p>
         </motion.div>
         <motion.div
